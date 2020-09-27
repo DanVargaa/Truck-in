@@ -18,21 +18,21 @@ O projeto Truck-in consiste em uma API desenvolvida usando Java spring-boot e um
 
 # Wireframes do Truck-in
 
-![Capture](https://github.com/DanVargaa/Truck-in/blob/master/Capture.PNG)
+![Capture](https://github.com/DanVargaa/Truck-in/blob/master/folder/Capture.PNG)
 
-![Capture2](https://github.com/DanVargaa/Truck-in/blob/master/Capture2.PNG)
+![Capture2](https://github.com/DanVargaa/Truck-in/blob/master/folder/Capture2.PNG)
 
-![Capture3](https://github.com/DanVargaa/Truck-in/blob/master/Capture3.PNG)
+![Capture3](https://github.com/DanVargaa/Truck-in/blob/master/folder/Capture3.PNG)
 
-![Capture4](https://github.com/DanVargaa/Truck-in/blob/master/Capture4.PNG)
+![Capture4](https://github.com/DanVargaa/Truck-in/blob/master/folder/Capture4.PNG)
 
-![Capture5](https://github.com/DanVargaa/Truck-in/blob/master/Capture5.PNG)
+![Capture5](https://github.com/DanVargaa/Truck-in/blob/master/folder/Capture5.PNG)
 
-![Capture6](https://github.com/DanVargaa/Truck-in/blob/master/Capture6.PNG)
+![Capture6](https://github.com/DanVargaa/Truck-in/blob/master/folder/Capture6.PNG)
 
-![Capture7](https://github.com/DanVargaa/Truck-in/blob/master/Capture7.PNG)
+![Capture7](https://github.com/DanVargaa/Truck-in/blob/master/folder/Capture7.PNG)
 
-![Capture8](https://github.com/DanVargaa/Truck-in/blob/master/Capture8.PNG)
+![Capture8](https://github.com/DanVargaa/Truck-in/blob/maste/folder/Capture8.PNG)
 
 
 
