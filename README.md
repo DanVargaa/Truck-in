@@ -32,7 +32,7 @@ O projeto Truck-in consiste em uma API desenvolvida usando Java spring-boot e um
 
 ![Capture7](https://github.com/DanVargaa/Truck-in/blob/master/folder/Capture7.PNG)
 
-![Capture8](https://github.com/DanVargaa/Truck-in/blob/maste/folder/Capture8.PNG)
+![Capture8](https://github.com/DanVargaa/Truck-in/blob/master/folder/Capture8.PNG)
 
 
 
