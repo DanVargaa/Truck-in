@@ -6,15 +6,15 @@ O projeto Truck-in consiste em uma API desenvolvida usando Java spring-boot e um
 
 # User Stories
 
-![user_stories](https://github.com/DanVargaa/Truck-in/blob/master/user%20stories.PNG)
+![user_stories](https://github.com/DanVargaa/Truck-in/blob/master/folder/user%20stories.PNG)
 
 # Modelagem de Dados
 
-![modelagem_de_dados](https://github.com/DanVargaa/Truck-in/blob/master/modelagem%20de%20dados.PNG)
+![modelagem_de_dados](https://github.com/DanVargaa/Truck-in/blob/master/folder/modelagem%20de%20dados.PNG)
 
 # Requisitos do Truck-in
 
-![backlog](https://github.com/DanVargaa/Truck-in/blob/master/backlog.PNG)
+![backlog](https://github.com/DanVargaa/Truck-in/blob/master/folder/backlog.PNG)
 
 # Wireframes do Truck-in
 
