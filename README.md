@@ -1,12 +1,18 @@
 # Truck-in
 
-# 
+# User Stories
 
 ![user_stories](https://github.com/DanVargaa/Truck-in/blob/master/user%20stories.PNG)
 
+# Modelagem de Dados
+
 ![modelagem_de_dados](https://github.com/DanVargaa/Truck-in/blob/master/modelagem%20de%20dados.PNG)
 
+#Requisitos do Truck-in
+
 ![backlog](https://github.com/DanVargaa/Truck-in/blob/master/backlog.PNG)
+
+#Wireframes do Truck-in
 
 ![Capture](https://github.com/DanVargaa/Truck-in/blob/master/Capture.PNG)
 
