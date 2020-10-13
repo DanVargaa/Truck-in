@@ -18,25 +18,25 @@ O projeto Truck-in consiste em uma API desenvolvida usando Java spring-boot e um
 
 ## Time
 
- Caue Bittencourt Carnietto
- 
+ Cauê Bittencourt Carnietto
+
  Daniel Vargas Ribeiro
- 
+
  Edryan Matheus dos Santos Maciel
- 
+
  Kauan do Espirito Santo Souza
- 
+
  Kevin Gabriel Alves de Melo
- 
+
  Luiz Miguel Macedo Andre
- 
+
  Salvador Lopes Junior
 
 ## Tecnologias Usadas
 
 Durante o trabalho poderam ocorrer alterações nas tecnologias usadas.
 
-As tecnologias que utilizamos até o momento foram, Java, JavaScript, Html, CSS, Postgres e Figma. 
+As tecnologias que utilizamos até o momento foram, Java, JavaScript, Html, CSS, Postgres e Figma.
 
 
 # User Stories
