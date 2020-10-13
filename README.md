@@ -1,3 +1,7 @@
+# Projeto Integrador - Fatec São José dos Campos
+
+Foi feita uma parceria entre a instituição de ensino FATEC Prof. Jessen Vidal e a empresa AICIT para que os alunos realizassem um aplicativo que serviria como forma de avalição para os alunos e para que a empresa possa utilizar e aprimorar o aplicativo em seu meio de trabalho.
+
 # Truck-in
 
 # O Projeto
