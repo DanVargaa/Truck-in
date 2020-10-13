@@ -9,11 +9,11 @@ Foi feita uma parceria entre a instituição de ensino FATEC Prof. Jessen Vidal 
 O projeto Truck-in consiste em uma API desenvolvida usando Java spring-boot e um website desenvolvido utilizando HTML, CSS e JavaScript. Com essas ferramentas desenvolveremos um sistema aque irá auxiliar a jornada trabalhista do motorista de caminhão durante suas viagens e possibilitar o empregador ter uma visão mais ampla de onde está o motorista, que horas ele irá fazer suas pausas.
 
 # Disciplinas integradas
- # .Engenharia de Software
+ ### Engenharia de Software
  Prof. Me. Giuliano Araujo Bertoti
- # .Sistemas de Informações
+ ### Sistemas de Informações
  Prof. Me. José Walmir Gonçalves Duque
- # .Linguagem de Programação
+ ### Linguagem de Programação
  Profª. Ma. Juliana Forin Pasquini Martiniz
 
 # User Stories
