@@ -17,11 +17,17 @@ O projeto Truck-in consiste em uma API desenvolvida usando Java spring-boot e um
  Profª. Ma. Juliana Forin Pasquini Martiniz
  ## Time
  Caue Bittencourt Carnietto
+ 
  Daniel Vargas Ribeiro
+ 
  Edryan Matheus dos Santos Maciel
+ 
  Kauan do Espirito Santo Souza
+ 
  Kevin Gabriel Alves de Melo
+ 
  Luiz Miguel Macedo Andre
+ 
  Salvador Lopes Junior
 
 # User Stories
