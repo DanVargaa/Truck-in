@@ -15,7 +15,9 @@ O projeto Truck-in consiste em uma API desenvolvida usando Java spring-boot e um
  Prof. Me. José Walmir Gonçalves Duque
  ### Linguagem de Programação
  Profª. Ma. Juliana Forin Pasquini Martiniz
- ## Time
+
+## Time
+
  Caue Bittencourt Carnietto
  
  Daniel Vargas Ribeiro
@@ -29,6 +31,13 @@ O projeto Truck-in consiste em uma API desenvolvida usando Java spring-boot e um
  Luiz Miguel Macedo Andre
  
  Salvador Lopes Junior
+
+## Tecnologias Usadas
+
+Durante o trabalho poderam ocorrer alterações nas tecnologias usadas.
+
+As tecnologias que utilizamos até o momento foram, Java, JavaScript, Html, CSS, Postgres e Figma. 
+
 
 # User Stories
 
