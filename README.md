@@ -38,6 +38,13 @@ Durante o trabalho poderão ocorrer alterações nas tecnologias usadas.
 
 As tecnologias que utilizamos até o momento foram Java, JavaScript, HTML, CSS, PostgreSQL e Figma.
 
+## Cards das Sprints
+
+![card_1](https://github.com/DanVargaa/Truck-in/blob/master/readme-assets/card%201.jpeg)
+![card_2](https://github.com/DanVargaa/Truck-in/blob/master/readme-assets/card%202.jpeg)
+![card_3](https://github.com/DanVargaa/Truck-in/blob/master/readme-assets/card%203.jpeg)
+![card_4](https://github.com/DanVargaa/Truck-in/blob/master/readme-assets/card%204.jpeg)
+
 ## Entregas
 
 <a href='https://github.com/DanVargaa/Truck-in/tree/sprint_0'> Branch 0 </a>- 21/09/2020 a 27/09/2020
