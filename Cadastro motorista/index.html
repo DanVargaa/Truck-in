@@ -24,11 +24,22 @@
                 <div class="half-box">
                     <label for="estado">Estado</label>
                     <input type="estado" name="estado" id="estado"    placeholder="Digite seu estado" data-required>
-
+                </div>
                 <div class="half-box spacing">
                     <label for="cidade">Cidade</label>
                     <input type="text" name="cidade" id="cidade" placeholder="Digite sua cidade" data-required>
                        
+                </div>
+                <div class="half-box">
+                    <label for="endereco">Endereço</label>
+                    <input type="text" name="endereco" id="endereco" placeholder="Digite seu endereço" data-required>
+
+                    <div class="half-box spacing">
+                        <label for="compl">Complemento</label>
+                        <input type="text" name="compl" id="compl" placeholder="Apartamento, referência, etc">
+
+                    </div>
+
                 </div>
                 <div class="half-box">
                     <label for="cnh">CNH do motorista</label>
@@ -40,12 +51,11 @@
                     <input type="date" name="date" id="date" 
                         data-password-validate data-required>
                 </div>
-                
-                </div>
 
                 <div class="full-box">
                     <input id="btn-submit" type="submit" value="Cadastrar">
                 </div>
+            </div>
         </form>
     </div>
     <p class="error-validation template"></p>
