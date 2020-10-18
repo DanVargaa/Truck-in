@@ -5,6 +5,9 @@
 Para que fosse decidido oque fariamos na segunda entrega, tivemos que pensar dentre todas as CRUDs quais seriam as mais valiosas para o cliente, com isso chegamos a conclusão que mostrar algo ja em funcionamento seria o ideal, logo fizemos a tela de cadastro do motorista, vinculamos ela ao banco de dados para que possa receber as informações que estão sendo escritas na tela.
 
 # Card da Entrega
+
+Quanto a entrega feita, nos esforçamos para condizer com o card que preparamos e posso dizer que tivemos êxito, fizemos a tela de cadastro do motorista e ela ja recebendo os dados no banco, com a aplicação funcionando corretamente.
+
 ![card_segunda](https://github.com/DanVargaa/Truck-in/blob/master/readme-assets/card%202.jpeg)
 
 ## Salvamento no Banco
