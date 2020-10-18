@@ -8,15 +8,15 @@ Foi feita uma parceria entre a instituição de ensino FATEC Prof. Jessen Vidal 
 
 # User Stories
 
-![user_stories](https://github.com/DanVargaa/Truck-in/blob/master/readme-assets/user%20stories.PNG)
+![Alt Text](https://media.giphy.com/media/oIYQasp3wyps0nM3g8/giphy.gif)
 
 # Modelagem de Dados
 
-![modelagem_de_dados](https://github.com/DanVargaa/Truck-in/blob/master/readme-assets/modelagem%20de%20dados.PNG)
+![Alt Text](https://media.giphy.com/media/a4r3OwSjUkrfkvzOEQ/giphy.gif)
 
 # Requisitos do Truck-in
 
-![backlog](https://github.com/DanVargaa/Truck-in/blob/master/readme-assets/backlog.PNG)
+![Alt Text](https://media.giphy.com/media/cKs9pWDePs5tfQXs4r/giphy.gif)
 
 # Wireframes do Truck-in
 
