@@ -31,7 +31,9 @@ Quanto a entrega feita, nos esforçamos para condizer com o card que preparamos 
 ## Requisitos para funcionamento
 
 Intellij Idea
+
 Java JDK 14
+
 Postgres
 
 
