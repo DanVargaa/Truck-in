@@ -4,7 +4,7 @@ Foi feita uma parceria entre a instituição de ensino FATEC Prof. Jessen Vidal 
 
 # Truck-in
 
-![Alt Text]https://giphy.com/gifs/Yy41WHKMkVDJwnpbTN
+![Alt Text](https://giphy.com/gifs/Yy41WHKMkVDJwnpbTN)
 
 # User Stories
 
