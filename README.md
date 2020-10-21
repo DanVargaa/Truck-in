@@ -18,19 +18,21 @@ O projeto Truck-in consiste em uma API desenvolvida usando Java spring-boot e um
 
 ## Time
 
- Cauê Bittencourt Carnietto
+ Kauan do Espirito Santo Souza (Scrum Master)
 
- Daniel Vargas Ribeiro
+ Daniel Vargas Ribeiro (Product Owner)
+ 
+ Cauê Bittencourt Carnietto (Dev Team)
 
- Edryan Matheus dos Santos Maciel
+ Edryan Matheus dos Santos Maciel (Dev Team)
 
- Kauan do Espirito Santo Souza
+ Kauan do Espirito Santo Souza (Dev Team)
 
- Kevin Gabriel Alves de Melo
+ Kevin Gabriel Alves de Melo (Dev Team)
 
- Luiz Miguel Macedo Andre
+ Luiz Miguel Macedo Andre (Dev Team)
 
- Salvador Lopes Junior
+ Salvador Lopes Junior (Dev Team)
 
 ## Tecnologias Usadas
 
