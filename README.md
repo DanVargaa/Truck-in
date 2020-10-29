@@ -1,7 +1,7 @@
-# Truck in
+
+## Projeto
 
 O projeto Truck-in consiste em uma API desenvolvida usando Java spring-boot e um website desenvolvido utilizando HTML, CSS e JavaScript. Com essas ferramentas desenvolveremos um sistema aque irá auxiliar a jornada trabalhista do motorista de caminhão durante suas viagens e possibilitar o empregador ter uma visão mais ampla de onde está o motorista, que horas ele irá fazer suas pausas.
-
 
 ## Cards das Sprints
 
