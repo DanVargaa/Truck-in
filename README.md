@@ -3,6 +3,25 @@
 
 O projeto Truck-in consiste em uma API desenvolvida usando Java spring-boot e um website desenvolvido utilizando HTML, CSS e JavaScript. Com essas ferramentas desenvolveremos um sistema aque irá auxiliar a jornada trabalhista do motorista de caminhão durante suas viagens e possibilitar o empregador ter uma visão mais ampla de onde está o motorista, que horas ele irá fazer suas pausas.
 
+## Time
+
+Kauan do Espirito Santo Souza (Scrum Master)
+
+Daniel Vargas Ribeiro (Product Owner)
+
+Cauê Bittencourt Carnietto (Dev Team)
+
+Edryan Matheus dos Santos Maciel (Dev Team)
+
+Kauan do Espirito Santo Souza (Dev Team)
+
+Kevin Gabriel Alves de Melo (Dev Team)
+
+Luiz Miguel Macedo Andre (Dev Team)
+
+Salvador Lopes Junior (Dev Team)
+
+
 ## Cards das Sprints
 
 ![card_1](https://github.com/DanVargaa/Truck-in/blob/master/readme-assets/card%201.jpeg)
@@ -29,4 +48,11 @@ O projeto Truck-in consiste em uma API desenvolvida usando Java spring-boot e um
 <a href='https://github.com/DanVargaa/Truck-in/tree/sprint_3'> Branch 3 </a>-
 23/11/2020 a 29/11/2020
 
+## Tecnologias Usadas
+
+Intellij Idea
+
+Java JDK 14
+
+Postgres
 
