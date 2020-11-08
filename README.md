@@ -1,6 +1,6 @@
-# Desenvolvimento das Páginas Truck-In
+# Truck-In
 
-Foi feita uma parceria entre a instituição de ensino FATEC Prof. Jessen Vidal e a empresa IACIT para que os alunos desenvolvam um sistema e sejam avaliados com base na qualidade do trabalho executado.
+Desenvolvemos artes e design das páginas pensando na integração com o banco de dados em javaScript
 
 ## Página Inicial
 ![Capture](https://github.com/DanVargaa/Truck-in/blob/sprint_3/readme-assets/telaPrincipal.gif)
