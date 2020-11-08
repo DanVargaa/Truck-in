@@ -17,8 +17,13 @@ Foi feita uma parceria entre a instituição de ensino FATEC Prof. Jessen Vidal 
 ## Tela Cadastrar Caminhão
 ![Capture5](https://github.com/DanVargaa/Truck-in/blob/sprint_3/readme-assets/cadCam.png)
 
+# Funcionamento das transições entre as páginas
 
+## Tela Inicial para Login
+![Capture6](https://github.com/DanVargaa/Truck-in/blob/sprint_3/readme-assets/login-index.gif)
 
+## Tela do Administrador para cadastrar caminhão e motorista
+![Capture7](https://github.com/DanVargaa/Truck-in/blob/sprint_3/readme-assets/index-adm.gif)
 
 
 
