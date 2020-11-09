@@ -1,6 +1,6 @@
 # Truck-In
 
-Desenvolvemos artes e design das páginas pensando na integração com o banco de dados em javaScript e sua programação para que o cadastro envie as informações ao banco do SpringBoos
+Desenvolvemos artes e design das páginas pensando na integração com o banco de dados em javaScript e sua programação para que o cadastro envie as informações ao banco do SpringBoost
 
 ## Página Inicial
 ![Capture](https://github.com/DanVargaa/Truck-in/blob/sprint_3/readme-assets/telaPrincipal.gif)
