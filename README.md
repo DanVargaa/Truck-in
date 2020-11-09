@@ -1,6 +1,6 @@
 # Truck-In
 
-Desenvolvemos artes e design das páginas pensando na integração com o banco de dados em javaScript
+Desenvolvemos artes e design das páginas pensando na integração com o banco de dados em javaScript e sua programação para que o cadastro envie as informações ao banco do SpringBoos
 
 ## Página Inicial
 ![Capture](https://github.com/DanVargaa/Truck-in/blob/sprint_3/readme-assets/telaPrincipal.gif)
@@ -25,5 +25,12 @@ Desenvolvemos artes e design das páginas pensando na integração com o banco d
 ## Tela do Administrador para cadastrar caminhão e motorista
 ![Capture7](https://github.com/DanVargaa/Truck-in/blob/sprint_3/readme-assets/index-adm.gif)
 
+# Funcionamento do código
+
+## Código cadastrando
+![Capture9](https://github.com/DanVargaa/Truck-in/blob/sprint_2/readme-assets/exibCad.gif)
+
+## Verificando as informações no banco de dados
+![Capture8](https://github.com/DanVargaa/Truck-in/blob/sprint_2/readme-assets/progCad.gif)
 
 
