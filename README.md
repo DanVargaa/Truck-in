@@ -2,6 +2,9 @@
 
 Desenvolvemos artes e design das páginas pensando na integração com o banco de dados em javaScript e sua programação para que o cadastro envie as informações ao banco do SpringBoost
 
+## Card da Sprint
+![Capture0,1](https://github.com/DanVargaa/Truck-in/blob/master/readme-assets/card%203.jpeg)
+
 ## Página Inicial
 ![Capture](https://github.com/DanVargaa/Truck-in/blob/sprint_3/readme-assets/telaPrincipal.gif)
 
