@@ -12,12 +12,9 @@ import javax.validation.constraints.Size;
 @Entity(name = "adms")
 public class Adm extends AuditModel {
 
-
-
     public Adm() { }
 
-
-    public Adm(@NotBlank @Size(min = 8, max = 11) String senha, @NotBlank @Size(max = 50) String name, @NotBlank @Size(max = 100) String estado, @NotBlank @Size(max = 100) String cidade, @NotBlank @Size(min = 10, max = 15) String cellPhone, @NotBlank @Size(min = 11, max = 11) String cpf, @NotBlank @Size(min = 11, max = 11) String cnh, @NotBlank @Size(max = 255) String address, @NotBlank @Size(min = 8, max = 11) String since, @NotBlank @Size(min = 8, max = 11) String complemento) {
+    public Adm(@NotBlank @Size(min = 8, max = 11) String senha, @NotBlank @Size(max = 50) String name, @NotBlank @Size(max = 100) String estado, @NotBlank @Size(max = 100) String cidade, @NotBlank @Size(min = 10, max = 15) String cellPhone, @NotBlank @Size(min = 11, max = 11) String cpf, @NotBlank @Size(min = 11, max = 11) String cargo, @NotBlank @Size(max = 255) String address, @NotBlank @Size(min = 8, max = 11) String since, @NotBlank @Size(min = 8, max = 11) String complemento) {
         this.name = name;
         this.estado = estado;
         this.cidade = cidade;
@@ -25,8 +22,9 @@ public class Adm extends AuditModel {
         this.cpf = cpf;
         this.cargo = cargo;
         this.address = address;
-        this.since = since;
         this.complemento = complemento;
+        this.since = since;
+
         this.senha = senha;
     }
     @Id
@@ -36,8 +34,6 @@ public class Adm extends AuditModel {
     @NotBlank
     @Size(max = 50)
     private String name;
-
-
 
     @NotBlank
     @Size(max = 100)
@@ -68,21 +64,13 @@ public class Adm extends AuditModel {
     private String since;
 
 
-    public Adm(@NotBlank @Size(min = 8, max = 11) String complemento) {
-        this.complemento = complemento;
-    }
-
     @NotBlank
     @Size(min = 8, max = 11)
     private String complemento;
 
-
     @NotBlank
     @Size(min = 8, max = 11)
     private String senha;
-
-
-
 
     public Long getId() {
         return id;
@@ -124,11 +112,11 @@ public class Adm extends AuditModel {
         this.cpf = cpf;
     }
 
-    public String getCnh() {
+    public String getCargo() {
         return cargo;
     }
 
-    public void setCnh(String cargo) {
+    public void setCargo(String cargo) {
         this.cargo = cargo;
     }
 

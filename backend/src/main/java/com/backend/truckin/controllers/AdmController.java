@@ -16,11 +16,6 @@ public class AdmController{
     @Autowired
     private AdmRepository admRepository;
 
-    @RequestMapping("/")
-    public String index() {
-        return "index";
-    }
-
     @RequestMapping("adms")
     public String adms(Model model) {
         System.out.println("entrou nesse método adms");
@@ -30,7 +25,7 @@ public class AdmController{
         return "adms";
     }
 
-    @RequestMapping(value = "salvar", method = RequestMethod.POST)
+    @RequestMapping(value = "salvarAdm", method = RequestMethod.POST)
     public String salvar(@Valid Adm adm, Model model) {
 
         System.out.println(adm);

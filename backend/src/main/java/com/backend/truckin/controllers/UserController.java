@@ -18,11 +18,6 @@ public class UserController{
     @Autowired
     private UserRepository userRepository;
 
-    @RequestMapping("/")
-    public String index(){
-        return "index";
-    }
-
     @RequestMapping("users")
     public String users(Model model){
         System.out.println("entrou nesse método users");

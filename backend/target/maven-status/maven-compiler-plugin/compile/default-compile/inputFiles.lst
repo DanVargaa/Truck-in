@@ -1,0 +1,10 @@
+C:\Users\dell\workspace\t-in\backend\src\main\java\com\backend\truckin\config\JpaAuditingConfig.java
+C:\Users\dell\workspace\t-in\backend\src\main\java\com\backend\truckin\models\Veiculo.java
+C:\Users\dell\workspace\t-in\backend\src\main\java\com\backend\truckin\models\User.java
+C:\Users\dell\workspace\t-in\backend\src\main\java\com\backend\truckin\repositories\UserRepository.java
+C:\Users\dell\workspace\t-in\backend\src\main\java\com\backend\truckin\controllers\VeiculoController.java
+C:\Users\dell\workspace\t-in\backend\src\main\java\com\backend\truckin\repositories\VeiculoRepository.java
+C:\Users\dell\workspace\t-in\backend\src\main\java\com\backend\truckin\TruckinApplication.java
+C:\Users\dell\workspace\t-in\backend\src\main\java\com\backend\truckin\exceptions\ResourceNotFoundException.java
+C:\Users\dell\workspace\t-in\backend\src\main\java\com\backend\truckin\controllers\UserController.java
+C:\Users\dell\workspace\t-in\backend\src\main\java\com\backend\truckin\models\AuditModel.java

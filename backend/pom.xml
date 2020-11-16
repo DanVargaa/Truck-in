@@ -15,7 +15,7 @@
 	<description>Truckin backend</description>
 
 	<properties>
-		<java.version>14</java.version>
+		<java.version>1.8</java.version>
 	</properties>
 
 	<dependencies>

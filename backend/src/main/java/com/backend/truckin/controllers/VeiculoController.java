@@ -15,15 +15,12 @@ public class VeiculoController{
 
     @Autowired
     private VeiculoRepository veiculoRepository;
-
     @RequestMapping("veiculos")
     public String veiculos(Model model) {
         System.out.println("entrou nesse método veiculos");
-        Iterable<Veiculo> veiculos = veiculoRepository.findAll();
-        model.addAttribute("veiculos", veiculos);
-
         return "veiculos";
     }
+
 
     @RequestMapping(value = "salvarVeiculo", method = RequestMethod.POST)
     public String salvarVeiculo(@Valid Veiculo veiculo, Model model) {

@@ -9,28 +9,7 @@
 
 <div class="container">
     <div id="users">
-        <table class="table table-hover">
-            <thead>
-            <tr>
-                <th>Nome</th>
-                <th>Sobrenome</th>
-                <th>Telefone</th>
-                <th>CPF</th>
-                <th>CNH</th>
-                <th>Endereço</th>
-                <th>Data Inicial</th>
-            </tr>
-            </thead>
-            <tr th:each="user : ${users}">
-                <td> <span th:text="${user.name}"></span> </td>
-                <td> <span th:text="${user.lastName}"></span> </td>
-                <td> <span th:text="${user.cellPhone}"></span> </td>
-                <td> <span th:text="${user.cpf}"></span> </td>
-                <td> <span th:text="${user.cnh}"></span> </td>
-                <td> <span th:text="${user.address}"></span> </td>
-                <td> <span th:text="${user.since}"></span> </td>
-            <tr>
-        </table>
+
     </div>
 </div>
 <hr/>
