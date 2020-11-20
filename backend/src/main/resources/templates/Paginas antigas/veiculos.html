@@ -48,29 +48,35 @@ Header
             <h1>Registrar Veículo</h1>
             <form id="register-form" action="salvarVeiculo" method="post">
                 <div class="full-box">
+
                     <div class="row about-container">
+                        <div class="intro-info"></div>
                         <div class="col-lg-6">
-                            <div class="half-box">
+
+                            <div class="form-group">
                                 <label for="placa">Placa do caminhão</label>
                                 <br>
                                 <input type="text" name="placa" id="placa" placeholder="EX: XXX0000" data-required>
                                 <br>
                                 <br>
                             </div>
+                            <div class="form-group">
                             <label for="montadora">Montadora</label>
                             <br>
                             <input type="text" name="montadora" id="montadora" placeholder="EX: Mercedes" data-required data-only-numbers="">
                             <br>
                             <br>
-
+                            </div>
+                            <div class="form-group">
                             <label for="modelo">Modelo</label>
                             <br>
                             <input type="text" name="modelo" id="modelo" placeholder="EX: 24250" data-required data-only-numbers="">
                             <br>
                             <br>
+                            </div>
                         </div>
                         <div class="col-lg-6">
-                            <div class="intro-info">
+                            <div class="form-group">
                                 <label for="categoria">Categoria</label>
                                 <br>
                                 <input type="text" name="categoria" id="categoria" placeholder="EX: Semipesado" data-required data-only-numbers="">
@@ -79,7 +85,7 @@ Header
                             </div>
                         </div>
                         <div class="col-lg-6">
-                            <div class="intro-info">
+                            <div class="form-group">
                                 <label for="history">Histórico de Manutenção</label>
                                 <br>
                                 <textarea id="history" name="history" placeholder="EX: Descrição de manutenções realizadas" rows="4" cols="100"></textarea>
