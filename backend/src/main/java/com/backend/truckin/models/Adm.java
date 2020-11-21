@@ -24,6 +24,7 @@ public class Adm extends AuditModel {
         this.address = address;
         this.complemento = complemento;
         this.since = since;
+
         this.senha = senha;
     }
     @Id

@@ -18,10 +18,6 @@ public class UserController{
     @Autowired
     private UserRepository userRepository;
 
-    @RequestMapping("/")
-    public String index(Model model) {
-    return "/";
-    }
 
     @RequestMapping("users")
     public String users(Model model){
