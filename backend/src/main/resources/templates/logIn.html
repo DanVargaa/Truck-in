@@ -20,7 +20,9 @@
   <link href="bootstrap/lib/lightbox/css/lightbox.min.css" rel="stylesheet">
 
   <link href="bootstrap/css/style.css" rel="stylesheet">
-
+   <!-- <FRAMESET>
+        <FRAME SRC="http://localhost:8081/logIn" NORESIZE>
+    </FRAMESET>                    ARRUMAR-->
 </head>
 <body>
 
@@ -34,7 +36,7 @@
         <a href="#intro" class="scrollto"> <img src="bootstrap/img/Logo.png" Width="70px"></a>
       <nav class="main-nav float-right d-none d-lg-block">
         <ul>
-             <li class="active"><a href="index.html">Página inicial</a></li>
+             <li class="active"><a href="/">Página inicial</a></li>
         </ul>
       </nav><!-- .main-nav -->
     </div>
@@ -50,20 +52,29 @@
          <h1>Logar</h1>
          <form id="Login" action="login" method="get">
              <div class="full-box">
-
-                   <label>Usuário: </label>
-                       <input type="text" name="name" id="name" placeholder="Digite seu nome de usuário " data-required>
+                 <div class="form-group">
+                     <div class="row about-container">
+                         <div class="col-lg-4 content order-lg-1 order-2">
+                         <label>Usuário: </label>
+                       <input type="text" name="name" class="form-control" id="name" placeholder="Digite seu nome de usuário " data-required>
                        <div class="half-box spacing">
                          <label for="senha">Senha: </label>
-                         <input type="text" name="senha" id="senha" placeholder="Digite sua senha" data-required="">
+                         <input type="password" name="senha" class="form-control" id="senha" placeholder="Digite sua senha" data-required="">
                        </div>
 
                        </div>
+                         <div class="col-lg-4 content order-lg-1 order-2">
+                         </div>
+                         </div>
 
                        <div class="intro-info">
 					   <br>
-                         <input id="btn-submit" class="btn-get-started" type="submit" value="login">
+                         <input id="btn-submit" class="btn-get-started" type="submit" value="Login">
+
                        </div>
+
+             </div>
+             </div>
                      </form>
                    </div>
                  </div>

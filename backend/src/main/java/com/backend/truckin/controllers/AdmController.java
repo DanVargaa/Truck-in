@@ -16,13 +16,13 @@ public class AdmController{
     @Autowired
     private AdmRepository admRepository;
 
-    @RequestMapping("adms")
+    @RequestMapping("admCad")
     public String adms(Model model) {
         System.out.println("entrou nesse método adms");
         Iterable<Adm> adms = admRepository.findAll();
         model.addAttribute("adms", adms);
 
-        return "adms";
+        return "admCad";
     }
 
     @RequestMapping(value = "salvarAdm", method = RequestMethod.POST)
@@ -34,7 +34,7 @@ public class AdmController{
         Iterable<Adm> adms = admRepository.findAll();
         model.addAttribute("adms", adms);
 
-        return "adms";
+        return "admCad";
     }
 
 
