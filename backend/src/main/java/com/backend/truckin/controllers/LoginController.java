@@ -38,21 +38,22 @@ public class LoginController{
         Adm adm = new Adm();
         adm = admRepository.findByCellPhone(name);
 
-        if(adm != null || usuario != null) {
-            if (adm != null && adm.getCellPhone().equals(name) && adm.getSenha().equals(senha)) {
-                return "redirect:/admActions";
-            }
+        if(adm != null) {
+            if (adm.getName().equals(name) && adm.getSenha().equals(senha)) {
+                //getSessaoAdm();
 
-            else if(usuario != null && usuario.getName().equals(name) &&  usuario.getSenha().equals(senha)){
-                return "redirect:/sessao";
-
-            }else{
+            } else {
                 System.out.println("usuario ou senha não conferem");
                 return null;
             }
         }
-        else {
+
+        if(usuario.getName().equals(name) &&  usuario.getSenha().equals(senha)){
+            //getSessao();
+
+        }else{
             System.out.println("usuario ou senha não conferem");
+            return null;
         }
         return null;
     }
