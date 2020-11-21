@@ -19,7 +19,7 @@
   <link href="bootstrap/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
   <link href="bootstrap/lib/lightbox/css/lightbox.min.css" rel="stylesheet">
 
-  <link href="css/style.css" rel="stylesheet">
+  <link href="bootstrap/css/style.css" rel="stylesheet">
 
 </head>
 <body>
@@ -48,21 +48,21 @@
 
      <div id="main-container">
          <h1>Logar</h1>
-         <form id="Login" action="">
+         <form id="Login" action="login" method="get">
              <div class="full-box">
 
                    <label>Usuário: </label>
-                       <input type="text" name="user" id="user" placeholder="Digite seu nome de usuário" data-required>
+                       <input type="text" name="name" id="name" placeholder="Digite seu nome de usuário " data-required>
                        <div class="half-box spacing">
-                         <label for="password">Senha: </label>
-                         <input type="text" name="password" id="password" placeholder="Digite sua senha" data-required="">
+                         <label for="senha">Senha: </label>
+                         <input type="text" name="senha" id="senha" placeholder="Digite sua senha" data-required="">
                        </div>
 
                        </div>
 
                        <div class="intro-info">
 					   <br>
-                         <input id="btn-submit" class="btn-get-started" type="submit" value="Logar">
+                         <input id="btn-submit" class="btn-get-started" type="submit" value="login">
                        </div>
                      </form>
                    </div>

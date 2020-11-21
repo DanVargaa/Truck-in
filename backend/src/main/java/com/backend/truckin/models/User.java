@@ -10,7 +10,7 @@ public class User extends AuditModel{
 
     public User() { }
 
-    public User(@NotBlank @Size(max = 50) String name, @NotBlank @Size(max = 100) String lastName, @NotBlank @Size(min = 10, max = 15) String cellPhone, @NotBlank @Size(min = 11, max = 11) String cpf, @NotBlank @Size(min = 11, max = 11) String cnh, @NotBlank @Size(max = 255) String address, @NotBlank @Size(min = 8, max = 11) String since) {
+    public User(@NotBlank @Size(max = 50) String senha, @NotBlank @Size(max = 50) String name, @NotBlank @Size(max = 100) String lastName, @NotBlank @Size(min = 10, max = 15) String cellPhone, @NotBlank @Size(min = 11, max = 11) String cpf, @NotBlank @Size(min = 11, max = 11) String cnh, @NotBlank @Size(max = 255) String address, @NotBlank @Size(min = 8, max = 11) String since) {
         this.name = name;
         this.lastName = lastName;
         this.cellPhone = cellPhone;
@@ -18,10 +18,16 @@ public class User extends AuditModel{
         this.cnh = cnh;
         this.address = address;
         this.since = since;
+        this.senha = senha;
     }
+
     @Id
     @GeneratedValue(strategy= GenerationType.AUTO)
     private Long id;
+
+    @NotBlank
+    @Size(max = 50)
+    private String senha;
 
     @NotBlank
     @Size(max = 50)
@@ -116,6 +122,10 @@ public class User extends AuditModel{
     public void setSince(String since) {
         this.since = since;
     }
+
+    public String getSenha() { return senha; }
+
+    public void setSenha(String senha) { this.senha = senha; }
 
 
 }
