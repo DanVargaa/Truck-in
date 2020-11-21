@@ -10,7 +10,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="truckin" target="14" />
+      <module name="truckin" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
