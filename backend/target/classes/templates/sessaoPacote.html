@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html> <html xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="utf-8">
     <title>TruckIn</title>
@@ -43,46 +43,28 @@ Header
 <body>
 <section id="intro" class="clearfix">
     <div class="container">
-
-        <div id="admActions">
-            <h1 class=>Menu Usuário</h1>
-            <form id="register-form" >
-                <div class="full-box">
-                    <div class="row about-container" >
-                        <div class="col-lg-6">
-                            <div class="intro-info">
-                                <a class="btn-get-started2" href="historicoSessao">Historico de Sessão</a>
-                            </div>
-                            <br>
-                            <br>
-                            <div class="intro-info">
-                                <a class="btn-get-started" href="sessaoTrabalho">Sessão de Trabalho</a>
-                            </div>
-                            <br>              
-                            <br>
-                        </div>
-                        <div class="col-lg-6">
-                            <div class="half-box">
-                                <div class="intro-info">
-                                    <a class="btn-get-started2" href="sessaoPacote">Pacote</a>
-                                </div>
-                                <br>
-                                <br>
-                                <div class="intro-info">
-                                    <a class="btn-get-started" href="perfil">Ver Perfil</a>
-                                </div>
-                                <br>
-                                <br>
-
-
-                        </div>
-                    </div>
-
-                    </div>
-                </div>
-            </form>
+        <div id="allUsers" class="intro-info">
+            <table class="table table-hover">
+                <thead>
+                <tr>
+                    <th>Ponto de Partida</th>
+                    <th>Ponto de Chegada</th>
+                    <th>Descrição</th>
+                    <th>Titulo</th>
+                    <th>Cliente</th>
+                </tr>
+                </thead>
+                <tr th:each="user : ${allUsers}">
+                    <td> <span th:text="${sessaoPacote.pontoDePartida}"></span> </td>
+                    <td> <span th:text="${sessaoPacote.pontoDeChegada}"></span> </td>
+                    <td> <span th:text="${sessaoPacote.descricao}"></span> </td>
+                    <td> <span th:text="${sessaoPacote.titulo}"></span> </td>
+                    <td> <span th:text="${sessaoPacote.cliente}"></span> </td>
+                <tr>
+            </table>
         </div>
     </div>
+
 
 
 

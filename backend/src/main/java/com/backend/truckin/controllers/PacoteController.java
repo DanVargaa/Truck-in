@@ -14,13 +14,13 @@ import javax.validation.Valid;
 public class PacoteController {
     @Autowired
     private PacoteRepository pacoteRepository;
-    @RequestMapping("pacotes")
-    public String pacotes(Model model) {
+    @RequestMapping("sessaoPacote")
+    public String sessaoPacote(Model model) {
         System.out.println("entrou nesse método adms");
-        Iterable<Pacote> pacotes = pacoteRepository.findAll();
-        model.addAttribute("pacotes", pacotes);
+        Iterable<Pacote> sessaoPacote = pacoteRepository.findAll();
+        model.addAttribute("sessaoPacote", sessaoPacote);
 
-        return "pacotes";
+        return "sessaoPacote";
     }
 
     @RequestMapping(value = "salvarPacote", method = RequestMethod.POST)
@@ -29,8 +29,8 @@ public class PacoteController {
         System.out.println(pacote);
         pacoteRepository.save(pacote);
 
-        Iterable<Pacote> pacotes = pacoteRepository.findAll();
-        model.addAttribute("pacotes", pacotes);
+        Iterable<Pacote> sessaoPacote = pacoteRepository.findAll();
+        model.addAttribute("sessaoPacote", sessaoPacote);
 
         return "adms";
     }

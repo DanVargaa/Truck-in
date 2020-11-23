@@ -8,7 +8,7 @@ import javax.persistence.Id;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.Size;
 
-@Entity(name = "pacotes")
+@Entity(name = "sessaoPacote")
 public class Pacote {
     public Pacote() { }
 

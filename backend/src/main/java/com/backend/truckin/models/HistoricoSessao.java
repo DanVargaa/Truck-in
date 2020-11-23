@@ -9,12 +9,12 @@ import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.Size;
 import java.util.Date;
 
-@Entity(name = "sessoes")
-public class SessaoTrabalho {
-    public SessaoTrabalho() { }
+@Entity(name = "sessaoTrabalho")
+public class HistoricoSessao {
+    public HistoricoSessao() { }
 
-    public SessaoTrabalho(@NotBlank @Size(max = 100) String horaInicial, @NotBlank @Size(max = 100) String horaFinal, @NotBlank @Size(max = 100) String comecoDescanso, @NotBlank @Size(max = 100) String fimDescanso, @NotBlank @Size(max = 100) String inicioUsoForaDaSessao, @NotBlank @Size(max = 100) String fimUsoForaDaSessao,
-            @NotBlank @Size(max = 100) String motorista, @NotBlank @Size(max = 100) String veiculo, @NotBlank @Size(max = 100) Date data, @NotBlank @Size(max = 5000) String ocorrencias, @NotBlank @Size(max = 10) String pacote) {
+    public HistoricoSessao(@NotBlank @Size(max = 100) String horaInicial, @NotBlank @Size(max = 100) String horaFinal, @NotBlank @Size(max = 100) String comecoDescanso, @NotBlank @Size(max = 100) String fimDescanso, @NotBlank @Size(max = 100) String inicioUsoForaDaSessao, @NotBlank @Size(max = 100) String fimUsoForaDaSessao,
+                           @NotBlank @Size(max = 100) String motorista, @NotBlank @Size(max = 100) String veiculo, @NotBlank @Size(max = 100) Date data, @NotBlank @Size(max = 5000) String ocorrencias, @NotBlank @Size(max = 10) String pacote) {
 
         this.motorista = motorista;
         this.veiculo = veiculo;

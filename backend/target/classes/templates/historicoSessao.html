@@ -47,10 +47,8 @@ Header
             <table class="table table-hover">
                 <thead>
                 <tr>
-                    <th>Motorista</th>
                     <th>Veiculo</th>
                     <th>Data</th>
-                    <th>Ocorrencias</th>
                     <th>Pacote</th>
                     <th>Hora inicial</th>
                     <th>Hora final</th>
@@ -61,16 +59,14 @@ Header
                 </tr>
                 </thead>
                 <tr th:each="user : ${allUsers}">
-                    <td> <span th:text="${sessaoTrabalho.motorista}"></span> </td>
-                    <td> <span th:text="${sessaoTrabalho.data}"></span> </td>
-                    <td> <span th:text="${sessaoTrabalho.ocorrencias}"></span> </td>
-                    <td> <span th:text="${sessaoTrabalho.pacote}"></span> </td>
-                    <td> <span th:text="${sessaoTrabalho.horaInicial}"></span> </td>
-                    <td> <span th:text="${sessaoTrabalho.horaFinal}"></span> </td>
-                    <td> <span th:text="${sessaoTrabalho.comecoDescanso}"></span> </td>
-                    <td> <span th:text="${sessaoTrabalho.fimDescanso}"></span> </td>
-                    <td> <span th:text="${sessaoTrabalho.inicioUsoForaDaSessao}"></span> </td>
-                    <td> <span th:text="${sessaoTrabalho.fimUsoForaDaSessao}"></span> </td>
+                    <td> <span th:text="${historicoSessao.data}"></span> </td>
+                    <td> <span th:text="${historicoSessao.pacote}"></span> </td>
+                    <td> <span th:text="${historicoSessao.horaInicial}"></span> </td>
+                    <td> <span th:text="${historicoSessao.horaFinal}"></span> </td>
+                    <td> <span th:text="${historicoSessao.comecoDescanso}"></span> </td>
+                    <td> <span th:text="${historicoSessao.fimDescanso}"></span> </td>
+                    <td> <span th:text="${historicoSessao.inicioUsoForaDaSessao}"></span> </td>
+                    <td> <span th:text="${historicoSessao.fimUsoForaDaSessao}"></span> </td>
                 <tr>
             </table>
         </div>

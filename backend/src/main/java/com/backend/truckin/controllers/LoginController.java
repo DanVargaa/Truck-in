@@ -44,7 +44,7 @@ public class LoginController{
             }
 
             else if(usuario != null && usuario.getName().equals(name) &&  usuario.getSenha().equals(senha)){
-                return "redirect:/sessao";
+                return "redirect:/menuUser";
 
             }else{
                 System.out.println("usuario ou senha não conferem");

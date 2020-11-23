@@ -21,17 +21,7 @@
 
     <link href="bootstrap/css/style.css" rel="stylesheet">
 
-    <script>
-function validarSenha(){
-	senha1 = document.f1.senha.value
-	senha2 = document.f1.confsenha.value
 
-	if (senha1 == senha2)
-		alert("SENHAS IGUAIS")
-	else
-		alert("SENHAS DIFERENTES")
-}
-</script>
 
 </head>
 <!--==========================
@@ -76,14 +66,22 @@ Header
                             <input type="text" class="form-control" id="cidade" name="cidade" placeholder="Cidade" />
                         </div>
                         <div class="form-group">
-                            <label for="cellPhone">Celular</label>
-                            <br>
-                            <input type="text" class="form-control" id="cellPhone" name="cellPhone" placeholder="Ex: (XX)XXXXXXXXX" />
+                            <label for="adress">Endereço</label>
+                            <input type="text" class="form-control" id="adress" name="adress" placeholder="Cidade" />
+                        </div>
+                        <div class="form-group">
+                            <label for="complemento">Complemento</label>
+                            <textarea type="text" class="form-control" id="complemento" name="complemento" placeholder="Complemento"> </textarea>
                         </div>
                     </div>
 
                     <div class="col-lg-6">
                         <div class="half-box">
+                            <div class="form-group">
+                                <label for="cellPhone">Celular</label>
+                                <br>
+                                <input type="text" class="form-control" id="cellPhone" name="cellPhone" placeholder="Ex: (XX)XXXXXXXXX" />
+                            </div>
                             <div class="form-group">
                                 <label for="cpf">CPF</label>
                                 <br>
@@ -104,16 +102,9 @@ Header
                                 <br>
                                 <input type="password" class="form-control" id="senha" name="senha" placeholder="Senha" />
                                 <br>
-                                <label for="senha">Senha</label>
-                                <br>
-                                <input type="password" class="form-control" id="confsenha" name="senha" placeholder="Confirmar Senha" />
-                            </div>
-                            <br>
-                            <div class="intro-info">
-                                <input id="btn-submit" class="btn-get-started" type="submit" onClick="validarSenha()" value="Cadastrar">
-                            </div>
                         </div>
                     </div>
+                </div>
                 </div>
             </form>
         </div>
