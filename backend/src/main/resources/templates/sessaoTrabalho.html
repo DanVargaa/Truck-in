@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html> <html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <title>TruckIn</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <link href="bootstrap/img/logoIco.png" rel="icon">
+    <link href="img/logoIco.png" rel="apple-touch-icon">
+
+    <link href="bootstrap/https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Montserrat:300,400,500,700" rel="stylesheet">
+
+    <link href="bootstrap/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="bootstrap/lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="bootstrap/lib/animate/animate.min.css" rel="stylesheet">
+    <link href="bootstrap/lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+    <link href="bootstrap/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="bootstrap/lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+    <link href="bootstrap/css/style.css" rel="stylesheet">
+
+</head>
+<!--==========================
+Header
+============================-->
+<header id="header" class="fixed-top">
+    <div class="container">
+        <a class="scrollto"> <img src="bootstrap/img/Logo.png" Width="70px"></a>
+        <nav class="main-nav float-right d-none d-lg-block">
+            <ul>
+                <li><a href="/">Sair</a></li>
+            </ul>
+        </nav><!-- .main-nav -->
+    </div>
+</header><!-- #header -->
+
+<!--==========================
+ Intro Section
+============================-->
+<body>
+<section id="intro" class="clearfix">
+    <div class="container">
+        <div id="allUsers" class="intro-info">
+            <table class="table table-hover">
+                <thead>
+                <tr>
+                    <th>Motorista</th>
+                    <th>Veiculo</th>
+                    <th>Data</th>
+                    <th>Ocorrencias</th>
+                    <th>Pacote</th>
+                    <th>Hora inicial</th>
+                    <th>Hora final</th>
+                    <th>Começo de descanso</th>
+                    <th>Fim de descanso</th>
+                    <th>Uso fora de Sessão</th>
+                    <th>Fim de uso fora de Sessão</th>
+                </tr>
+                </thead>
+                <tr th:each="user : ${allUsers}">
+                    <td> <span th:text="${sessaoTrabalho.motorista}"></span> </td>
+                    <td> <span th:text="${sessaoTrabalho.data}"></span> </td>
+                    <td> <span th:text="${sessaoTrabalho.ocorrencias}"></span> </td>
+                    <td> <span th:text="${sessaoTrabalho.pacote}"></span> </td>
+                    <td> <span th:text="${sessaoTrabalho.horaInicial}"></span> </td>
+                    <td> <span th:text="${sessaoTrabalho.horaFinal}"></span> </td>
+                    <td> <span th:text="${sessaoTrabalho.comecoDescanso}"></span> </td>
+                    <td> <span th:text="${sessaoTrabalho.fimDescanso}"></span> </td>
+                    <td> <span th:text="${sessaoTrabalho.inicioUsoForaDaSessao}"></span> </td>
+                    <td> <span th:text="${sessaoTrabalho.fimUsoForaDaSessao}"></span> </td>
+                <tr>
+            </table>
+        </div>
+    </div>
+
+
+
+
+    <div>
+    </div>
+
+</section><!-- #intro -->
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+</html>

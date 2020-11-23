@@ -21,6 +21,18 @@
 
     <link href="bootstrap/css/style.css" rel="stylesheet">
 
+    <script>
+function validarSenha(){
+	senha1 = document.f1.senha.value
+	senha2 = document.f1.confsenha.value
+
+	if (senha1 == senha2)
+		alert("SENHAS IGUAIS")
+	else
+		alert("SENHAS DIFERENTES")
+}
+</script>
+
 </head>
 <!--==========================
 Header
@@ -90,11 +102,15 @@ Header
                             <div class="form-group">
                                 <label for="senha">Senha</label>
                                 <br>
-                                <input type="text" class="form-control" id="senha" name="senha" placeholder="Senha" />
+                                <input type="password" class="form-control" id="senha" name="senha" placeholder="Senha" />
+                                <br>
+                                <label for="senha">Senha</label>
+                                <br>
+                                <input type="password" class="form-control" id="confsenha" name="senha" placeholder="Confirmar Senha" />
                             </div>
                             <br>
                             <div class="intro-info">
-                                <input id="btn-submit" class="btn-get-started" type="submit" value="Cadastrar">
+                                <input id="btn-submit" class="btn-get-started" type="submit" onClick="validarSenha()" value="Cadastrar">
                             </div>
                         </div>
                     </div>
