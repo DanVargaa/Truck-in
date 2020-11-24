@@ -23,17 +23,4 @@ public class SessaoTrabalhoController {
 
         return "sessaoTrabalho";
     }
-
-    @RequestMapping(value = "salvarSessao", method = RequestMethod.POST)
-    public String salvar(@Valid HistoricoSessao sessao, Model model) {
-
-        System.out.println(sessao);
-        sessaoRepository.save(sessao);
-
-        Iterable<HistoricoSessao> sessaoTrabalho = sessaoRepository.findAll();
-        model.addAttribute("sessaoTrabalho", sessaoTrabalho);
-
-        return "adms";
-    }
-
 }

@@ -23,7 +23,6 @@ public class HistoricoSessaoController {
 
         return "historicoSessao";
     }
-
     @RequestMapping(value = "salvarSessao", method = RequestMethod.POST)
     public String salvar(@Valid HistoricoSessao sessao, Model model) {
 
@@ -35,5 +34,6 @@ public class HistoricoSessaoController {
 
         return "adms";
     }
+
 
 }
