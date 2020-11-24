@@ -16,7 +16,7 @@
 
     <link href="bootstrap/lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
     <link href="bootstrap/lib/animate/animate.min.css" rel="stylesheet">
-    <link href="bootstrap/lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+    <link href="bootstrap/ionicons/css/ionicons.min.css" rel="stylesheet">
     <link href="bootstrap/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
     <link href="bootstrap/lib/lightbox/css/lightbox.min.css" rel="stylesheet">
 
@@ -44,32 +44,49 @@ Header
 <body>
 <section id="intro" class="clearfix">
     <div class="container">
-        <div id="allUsers" class="intro-info">
-            <table class="table table-hover">
-                <thead>
-                <tr>
-                    <th>Ponto de Partida</th>
-                    <th>Ponto de Chegada</th>
-                    <th>Descrição</th>
-                    <th>Titulo</th>
-                    <th>Cliente</th>
-                </tr>
-                </thead>
-                <tr th:each="user : ${allUsers}">
-                    <td> <span th:text="${sessaoPacote.pontoDePartida}"></span> </td>
-                    <td> <span th:text="${sessaoPacote.pontoDeChegada}"></span> </td>
-                    <td> <span th:text="${sessaoPacote.descricao}"></span> </td>
-                    <td> <span th:text="${sessaoPacote.titulo}"></span> </td>
-                    <td> <span th:text="${sessaoPacote.cliente}"></span> </td>
-                <tr>
-            </table>
+        <div id="perfil" class="intro-info">
+            <div class="row about-container"  >
+                <div class="col-lg-4">
+                    <img src="bootstrap/img/perfil.png" width=250px height=240px>
+                    <br>
+
+
+                </div>
+                <div class="col-lg-6" th:each="user : ${telaPerfil}">
+                    <ul>
+                        <li class="display: inline"> <b> Nome: </b></li>
+                        <li class="display: inline" th:text="${user.name}">   </li>
+                         <li class="display: inline" th:text="${user.lastName}">></li>
+
+                    </ul>
+                    <ul>
+                        <li class="display: inline"> <b>Celular: </b></li>
+                        <li class="display: inline" th:text="${user.cellPhone}"> </li>
+
+                    </ul>
+                    <ul>
+                        <li class="display: inline"><b> CPF: </b></li>
+                        <li class="display: inline" th:text="${user.cpf}">  </li>
+
+                    </ul>
+                    <ul>
+                        <li class="display: inline"><b> CNH: </b></li>
+                        <li class="display: inline" th:text="${user.cnh}"> </li>
+
+                    </ul>
+                    <ul>
+                        <li class="display: inline"><b> Endereço:</b> </li>
+                        <li class="display: inline" th:text="${user.address}">  </li>
+
+                    </ul>
+                    <ul>
+                        <li class="display: inline"><b> Data de nascimento: </b></li>
+                        <li class="display: inline" th:text="${user.since}">  </li>
+
+                    </ul>
+                </div>
+            </div>
         </div>
-    </div>
-
-
-
-
-    <div>
     </div>
 
 </section><!-- #intro -->

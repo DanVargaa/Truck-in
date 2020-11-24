@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org">
+<html> <html xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="utf-8">
     <title>TruckIn</title>
@@ -8,9 +8,9 @@
     <meta content="" name="description">
 
     <link href="bootstrap/img/logoIco.png" rel="icon">
-    <link href="img/logoIco.png" rel="apple-touch-icon">
+    <link href="bootstrap/img/logoIco.png" rel="apple-touch-icon">
 
-    <link href="bootstrap/https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Montserrat:300,400,500,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Montserrat:300,400,500,700" rel="stylesheet">
 
     <link href="bootstrap/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
@@ -44,39 +44,35 @@ Header
 <body>
 <section id="intro" class="clearfix">
     <div class="container">
-        <div id="allUsers" class="intro-info">
-            <table class="table table-hover">
-                <thead>
-                <tr>
-                    <th>Veiculo</th>
-                    <th>Data</th>
-                    <th>Pacote</th>
-                    <th>Hora inicial</th>
-                    <th>Hora final</th>
-                    <th>Começo de descanso</th>
-                    <th>Fim de descanso</th>
-                    <th>Uso fora de Sessão</th>
-                    <th>Fim de uso fora de Sessão</th>
-                </tr>
-                </thead>
-                <tr th:each="user : ${allUsers}">
-                    <td> <span th:text="${historicoSessao.data}"></span> </td>
-                    <td> <span th:text="${historicoSessao.pacote}"></span> </td>
-                    <td> <span th:text="${historicoSessao.horaInicial}"></span> </td>
-                    <td> <span th:text="${historicoSessao.horaFinal}"></span> </td>
-                    <td> <span th:text="${historicoSessao.comecoDescanso}"></span> </td>
-                    <td> <span th:text="${historicoSessao.fimDescanso}"></span> </td>
-                    <td> <span th:text="${historicoSessao.inicioUsoForaDaSessao}"></span> </td>
-                    <td> <span th:text="${historicoSessao.fimUsoForaDaSessao}"></span> </td>
-                <tr>
-            </table>
+        <h1>Sessão de Trabalho</h1>
+        <div class="row about-container">
+            <div class="col-lg-2">
+                <div class="intro-info">
+                    <a class="btn-get-started2">Inicio</a>
+					<br>
+                <p style='padding-right:20%'>Timer</p>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="half-box">
+                    <div class="intro-info">
+                        <a class="btn-get-started2">Fora de Trabalho</a>
+						<br>
+						<p class="timer">Timer</p>
+                    </div>
+					
+                </div>
+            </div>
+            
+        <div class="col-lg-2">
+            <div class="half-box"></div>
+                <div class="intro-info">
+                    <a class="btn-get-started2">Descanso</a>
+					<br>
+					<p>Timer</p>
+                </div>
         </div>
-    </div>
-
-
-
-
-    <div>
+        
     </div>
 
 </section><!-- #intro -->

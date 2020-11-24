@@ -52,8 +52,14 @@ h6 {
 }
 
 /* Label branco */
-
-
+.timer
+{
+right:15px;	
+}
+.inline
+{
+	display: inline;
+}
 
 /* Back to top button */
 

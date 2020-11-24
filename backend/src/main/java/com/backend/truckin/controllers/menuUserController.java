@@ -17,8 +17,5 @@ public class menuUserController {
     {
         return "menuUser";
     }
-   /*@RequestMapping(value = "getAllUsers", method = RequestMethod.GET)
-    public String allUsers(){
-        return "allUsers";
-    }*/
+
 }
