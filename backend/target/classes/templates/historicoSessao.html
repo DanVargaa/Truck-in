@@ -2,7 +2,7 @@
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="utf-8">
-    <title>TruckIn</title>
+    <title>Truck-In</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -59,7 +59,7 @@ Header
                     <th>Fim de uso fora de Sessão</th>
                 </tr>
                 </thead>
-                <tr th:each="user : ${allUsers}">
+                <tr th:each="historicosessao : ${historicoSessao}">
                     <td> <span th:text="${historicoSessao.data}"></span> </td>
                     <td> <span th:text="${historicoSessao.pacote}"></span> </td>
                     <td> <span th:text="${historicoSessao.horaInicial}"></span> </td>

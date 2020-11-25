@@ -1,112 +1,108 @@
 <!DOCTYPE html>
+
 <head>
-    <meta charset="utf-8">
-    <title>TruckIn</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="" name="keywords">
-    <meta content="" name="description">
-
-    <link href="bootstrap/img/logoIco.png" rel="icon">
-    <link href="bootstrap/img/logoIco.png" rel="apple-touch-icon">
-
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Montserrat:300,400,500,700" rel="stylesheet">
-
-    <link href="bootstrap/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-    <link href="bootstrap/lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-    <link href="bootstrap/lib/animate/animate.min.css" rel="stylesheet">
-    <link href="bootstrap/lib/ionicons/css/ionicons.min.css" rel="stylesheet">
-    <link href="bootstrap/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-    <link href="bootstrap/lib/lightbox/css/lightbox.min.css" rel="stylesheet">
-
-    <link href="bootstrap/css/style.css" rel="stylesheet">
-
-
-
+  <meta charset="utf-8">
+  <title>Truck-in</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+  <link href="bootstrap/img/logoIco.png" rel="icon">
+  <link href="bootstrap/img/logoIco.png" rel="apple-touch-icon">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Montserrat:300,400,500,700" rel="stylesheet">
+  <link href="bootstrap/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="bootstrap/lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="bootstrap/lib/animate/animate.min.css" rel="stylesheet">
+  <link href="bootstrap/lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+  <link href="bootstrap/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="bootstrap/lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+  <link href="bootstrap/css/style.css" rel="stylesheet">
 </head>
 <!--==========================
 Header
 ============================-->
-
 <header id="header" class="fixed-top">
-    <div class="container">
-        <a class="scrollto"> <img src="bootstrap/img/Logo.png" Width="70px"></a>
-        <nav class="main-nav float-right d-none d-lg-block">
-            <ul>
-                <li class="active"><a href="admActions">Voltar</a></li>
+  <div class="container">
+    <a class="scrollto"> <img src="bootstrap/img/Logo.png" Width="70px"></a>
+    <nav class="main-nav float-right d-none d-lg-block">
+      <ul>
+        <li class="active"><a href="admActions">Voltar</a></li>
 
-                <li><a href="/">Sair</a></li>
-            </ul>
-        </nav><!-- .main-nav -->
-    </div>
+        <li><a href="/">Sair</a></li>
+      </ul>
+    </nav><!-- .main-nav -->
+  </div>
 </header><!-- #header -->
-
 <!--==========================
  Intro Section
 ============================-->
 <section id="intro" class="clearfix">
-    <div class="container">
-        <h1>Adicionar Administrador</h1>
-        <div class="full-box">
-            <form action="salvarAdm" method="post">
-                <div class="row about-container">
-                    <div class="col-lg-6">
-                        <div class="form-group">
-                            <label for="name">Nome Completo</label>
-                            <br>
-                            <input type="text" class="form-control" id="name" name="name" placeholder="Nome" />
-                        </div>
-                        <div class="form-group">
-                            <label for="estado">Estado</label>
-                            <br>
-                            <input type="text" class="form-control" id="estado" name="estado" placeholder="Estado" />
-                        </div>
-                        <div class="form-group">
-                            <label for="cidade">Cidade</label>
-                            <input type="text" class="form-control" id="cidade" name="cidade" placeholder="Cidade" />
-                        </div>
-                        <div class="form-group">
-                            <label for="adress">Endereço</label>
-                            <input type="text" class="form-control" id="adress" name="adress" placeholder="Cidade" />
-                        </div>
-                        <div class="form-group">
-                            <label for="complemento">Complemento</label>
-                            <textarea type="text" class="form-control" id="complemento" name="complemento" placeholder="Complemento"> </textarea>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-6">
-                        <div class="half-box">
-                            <div class="form-group">
-                                <label for="cellPhone">Celular</label>
-                                <br>
-                                <input type="text" class="form-control" id="cellPhone" name="cellPhone" placeholder="Ex: (XX)XXXXXXXXX" />
-                            </div>
-                            <div class="form-group">
-                                <label for="cpf">CPF</label>
-                                <br>
-                                <input type="text" class="form-control" id="cpf" name="cpf" placeholder="XXX.XXX.XXX-XX" />
-                            </div>
-                            <div class="form-group">
-                                <label for="cargo">Cargo</label>
-                                <br>
-                                <input type="text" class="form-control" id="cargo" name="cargo" placeholder="Seu cargo" />
-                            </div>
-                            <div class="form-group">
-                                <label for="since">Data Inicial</label>
-                                <br>
-                                <input type="date" class="form-control" id="since" name="since" placeholder="Data em que entrou na Empresa" />
-                            </div>
-                            <div class="form-group">
-                                <label for="senha">Senha</label>
-                                <br>
-                                <input type="password" class="form-control" id="senha" name="senha" placeholder="Senha" />
-                                <br>
-                        </div>
-                    </div>
-                </div>
-                </div>
-            </form>
+  <div class="container">
+    <h1>Adicionar Administrador</h1>
+    <div class="full-box">
+      <form action="salvarAdm" method="post">
+        <div class="row about-container">
+          <div class="col-lg-6">
+            <div class="form-group">
+              <label for="name">Nome Completo</label>
+              <br>
+              <input type="text" class="form-control" id="name" name="name" placeholder="Nome" />
+            </div>
+            <div class="form-group">
+              <label for="estado">Estado</label>
+              <br>
+              <input type="text" class="form-control" id="estado" name="estado" placeholder="Estado" />
+            </div>
+            <div class="form-group">
+              <label for="cidade">Cidade</label>
+              <input type="text" class="form-control" id="cidade" name="cidade" placeholder="Cidade" />
+            </div>
+            <div class="form-group">
+              <label for="adress">Endereço</label>
+              <input type="text" class="form-control" id="adress" name="adress" placeholder="Cidade" />
+            </div>
+            <div class="form-group">
+              <label for="complemento">Complemento</label>
+              <textarea type="text" class="form-control" id="complemento" name="complemento"
+                placeholder="Complemento"> </textarea>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="half-box">
+              <div class="form-group">
+                <label for="cellPhone">Celular</label>
+                <br>
+                <input type="text" class="form-control" id="cellPhone" name="cellPhone"
+                  placeholder="Ex: (XX)XXXXXXXXX" />
+              </div>
+              <div class="form-group">
+                <label for="cpf">CPF</label>
+                <br>
+                <input type="text" class="form-control" id="cpf" name="cpf" placeholder="XXX.XXX.XXX-XX" />
+              </div>
+              <div class="form-group">
+                <label for="cargo">Cargo</label>
+                <br>
+                <input type="text" class="form-control" id="cargo" name="cargo" placeholder="Seu cargo" />
+              </div>
+              <div class="form-group">
+                <label for="since">Data Inicial</label>
+                <br>
+                <input type="date" class="form-control" id="since" name="since"
+                  placeholder="Data em que entrou na Empresa" />
+              </div>
+              <div class="form-group">
+                <label for="senha">Senha</label>
+                <br>
+                <input type="password" class="form-control" id="senha" name="senha" placeholder="Senha" />
+                <br>
+              </div>
+              <div class="intro-info">
+                <input id="btn-submit" class="btn-get-started" type="submit" value="Cadastrar">
+              </div>
+            </div>
+          </div>
         </div>
+      </form>
     </div>
+  </div>
 </section><!-- #intro -->

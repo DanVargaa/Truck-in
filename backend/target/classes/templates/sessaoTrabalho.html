@@ -7,31 +7,29 @@
     <meta content="" name="keywords">
     <meta content="" name="description">
 
-    <link href="bootstrap/img/logoIco.png" rel="icon">
-    <link href="bootstrap/img/logoIco.png" rel="apple-touch-icon">
+    <link href="img/logoIco.png" rel="icon">
+    <link href="img/logoIco.png" rel="apple-touch-icon">
 
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Montserrat:300,400,500,700" rel="stylesheet">
 
-    <link href="bootstrap/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-    <link href="bootstrap/lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-    <link href="bootstrap/lib/animate/animate.min.css" rel="stylesheet">
-    <link href="bootstrap/lib/ionicons/css/ionicons.min.css" rel="stylesheet">
-    <link href="bootstrap/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-    <link href="bootstrap/lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+    <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
 
-    <link href="bootstrap/css/style.css" rel="stylesheet">
-
+    <link href="css/style.css" rel="stylesheet">
 </head>
 <!--==========================
 Header
 ============================-->
 <header id="header" class="fixed-top">
     <div class="container">
-        <a class="scrollto"> <img src="bootstrap/img/Logo.png" Width="70px"></a>
+        <a class="scrollto"> <img src="img/Logo.png" Width="70px"></a>
         <nav class="main-nav float-right d-none d-lg-block">
             <ul>
-                <li class="active"><a href="menuUser">Voltar</a></li>
                 <li><a href="/">Sair</a></li>
             </ul>
         </nav><!-- .main-nav -->
@@ -46,35 +44,139 @@ Header
     <div class="container">
         <h1>Sessão de Trabalho</h1>
         <div class="row about-container">
-            <div class="col-lg-2">
+            <div class="col-lg-4">
                 <div class="intro-info">
-                    <a class="btn-get-started2">Inicio</a>
-					<br>
-                <p style='padding-right:20%'>Timer</p>
+                    <div style ="width: 450px"; style="margin: 0 auto">
+                        <h3>Trabalho</h3>
+                        <button onclick="meuRelogio1()"class="btn-get-started2">Iniciar</button>
+
+                        <button onclick="pararRelogio1()"class="btn-get-started2">Parar</button>
+                    </div>
+                    <b id='rel'></b>
+                    
+                    <script>
+                    
+                        var temporizador1 = 0;
+                    
+                        function meuRelogio1() {
+                    
+                        var agora = new Date();
+                        console.log(agora)
+                        var h = agora.getHours(0);
+                        var m = agora.getMinutes(0);
+                        var s = agora.getSeconds(0);
+                    
+                        h = zeroAntes(h);
+                        m = zeroAntes(m);
+                        s = zeroAntes(s);
+                        document.getElementById('rel').innerHTML =
+                        h + ":" + m + ":" + s;
+                        temporizador1 = setTimeout(meuRelogio1, 500);
+                        }
+                    
+                        function zeroAntes(i) {
+                        if (i < 10) {i = "0" + i};
+                        return i;
+                        }
+                    
+                        function pararRelogio1() {
+                        clearTimeout(temporizador1);
+                        }
+                    </script>
                 </div>
             </div>
-            <div class="col-lg-3">
+            <div class="col-lg-4">
                 <div class="half-box">
                     <div class="intro-info">
-                        <a class="btn-get-started2">Fora de Trabalho</a>
-						<br>
-						<p class="timer">Timer</p>
+                        <div style="max-width: 180px;"> 
+                            <div style ="width: 450px"; style="margin: 0 auto">
+                                <h3> Descanso</h3>
+                                <button onclick="meuRelogio2()"class="btn-get-started2">Iniciar</button>
+    
+                                <button onclick="pararRelogio2()"class="btn-get-started2">Parar</button>
+                            </div>
+                            <b id='rel2'></b>
+                            
+                            <script>
+                            
+                                var temporizador2 = 0;
+                            
+                                function meuRelogio2() {
+                            
+                                var agora = new Date();
+                                console.log(agora)
+                                var h = agora.getHours(0);
+                                var m = agora.getMinutes(0);
+                                var s = agora.getSeconds(0);
+                            
+                                h = zeroAntes(h);
+                                m = zeroAntes(m);
+                                s = zeroAntes(s);
+                                document.getElementById('rel2').innerHTML =
+                                h + ":" + m + ":" + s;
+                                temporizador2 = setTimeout(meuRelogio2, 500);
+                                }
+                            
+                                function zeroAntes(i) {
+                                if (i < 10) {i = "0" + i};
+                                return i;
+                                }
+                            
+                                function pararRelogio2() {
+                                clearTimeout(temporizador2);
+                                }
+                            
+                            </script>
+                        </div>
                     </div>
-					
                 </div>
             </div>
-            
-        <div class="col-lg-2">
-            <div class="half-box"></div>
-                <div class="intro-info">
-                    <a class="btn-get-started2">Descanso</a>
-					<br>
-					<p>Timer</p>
-                </div>
-        </div>
-        
-    </div>
+            <div class="col-lg-4">
+                <div class="half-box"></div>
+                    <div class="intro-info">
+                        <div style ="width: 450px"; style="margin: 0 auto">
+                            <h3>Fora de Trabalho</h3>
+                            <button onclick="meuRelogio3()"class="btn-get-started2">Iniciar</button>
 
+                            <button onclick="pararRelogio3()"class="btn-get-started2">Parar</button>
+                        </div>
+                        <b id='rel3'></b>
+                        
+                        <script>
+                        
+                            var temporizador3 = 0;
+                        
+                            function meuRelogio3() {
+                        
+                            var agora = new Date();
+                            console.log(agora)
+                            var h = agora.getHours(0);
+                            var m = agora.getMinutes(0);
+                            var s = agora.getSeconds(0);
+                        
+                            h = zeroAntes(h);
+                            m = zeroAntes(m);
+                            s = zeroAntes(s);
+                            document.getElementById('rel3').innerHTML =
+                            h + ":" + m + ":" + s;
+                            temporizador3 = setTimeout(meuRelogio3, 500);
+                            }
+                        
+                            function zeroAntes(i) {
+                            if (i < 10) {i = "0" + i};
+                            return i;
+                            }
+                        
+                            function pararRelogio3() {
+                            clearTimeout(temporizador3);
+                            }
+                        
+                        </script>
+                        </div>
+                 </div>
+            </div>
+        </div>
+    </div>
 </section><!-- #intro -->
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
