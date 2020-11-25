@@ -21,8 +21,8 @@ public class pacoteCadController {
     public String sessaoPacote(Model model)
     {
         System.out.println("entrou nesse método pacote");
-        Iterable<Pacote> sessaoPacote = pacoteRepository.findAll();
-        model.addAttribute("sessaoPacote", sessaoPacote);
+        Iterable<Pacote> pacotes = pacoteRepository.findAll();
+        model.addAttribute("pacotes", pacotes);
 
         return "pacoteCad";
     }
@@ -33,8 +33,8 @@ public class pacoteCadController {
         System.out.println(pacote);
         pacoteRepository.save(pacote);
 
-        Iterable<Pacote> sessaoPacote = pacoteRepository.findAll();
-        model.addAttribute("sessaoPacote", sessaoPacote);
+        Iterable<Pacote> pacotes = pacoteRepository.findAll();
+        model.addAttribute("pacotes", pacotes);
 
         return "pacoteCad";
     }

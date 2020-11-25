@@ -8,15 +8,12 @@ import javax.persistence.Id;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.Size;
 
-@Entity(name = "sessaoPacote")
-public class Pacote {
+@Entity(name = "pacotes")
+public class Pacote extends AuditModel{
 
     public Pacote() { }
-    @Id
-    @GeneratedValue(strategy= GenerationType.AUTO)
-    private Long id;
 
-    public Pacote(@NotBlank long IdMotorista, @NotBlank @Size(max = 100) String pontoDePartida, @NotBlank @Size(max = 100) String pontoDeChegada, @NotBlank @Size(max = 1000) String descricao, @NotBlank @Size(max = 100) String titulo, @NotBlank @Size(max = 100) String cliente) {
+    public Pacote(@NotBlank String IdMotorista, @NotBlank @Size(max = 100) String pontoDePartida, @NotBlank @Size(max = 100) String pontoDeChegada, @NotBlank @Size(max = 1000) String descricao, @NotBlank @Size(max = 100) String titulo, @NotBlank @Size(max = 100) String cliente) {
         this.pontoDePartida = pontoDePartida;
         this.pontoDeChegada = pontoDeChegada;
         this.descricao = descricao;
@@ -24,6 +21,9 @@ public class Pacote {
         this.cliente = cliente;
         this.IdMotorista = IdMotorista;
     }
+    @Id
+    @GeneratedValue(strategy= GenerationType.AUTO)
+    private Long id;
 
     @NotBlank
     @Size(max = 100)
@@ -45,8 +45,61 @@ public class Pacote {
     @Size(max = 100)
     private String cliente;
 
-    @NotBlank
-    private long IdMotorista;
+    private @NotBlank String IdMotorista;
 
+    public Long getId() {
+        return id;
+    }
 
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public String getPontoDePartida() {
+        return pontoDePartida;
+    }
+
+    public void setPontoDePartida(String pontoDePartida) {
+        this.pontoDePartida = pontoDePartida;
+    }
+
+    public String getPontoDeChegada() {
+        return pontoDeChegada;
+    }
+
+    public void setPontoDeChegada(String pontoDeChegada) {
+        this.pontoDeChegada = pontoDeChegada;
+    }
+
+    public String getDescricao() {
+        return descricao;
+    }
+
+    public void setDescricao(String descricao) {
+        this.descricao = descricao;
+    }
+
+    public String getTitulo() {
+        return titulo;
+    }
+
+    public void setTitulo(String titulo) {
+        this.titulo = titulo;
+    }
+
+    public String getCliente() {
+        return cliente;
+    }
+
+    public void setCliente(String cliente) {
+        this.cliente = cliente;
+    }
+
+    public String getIdMotorista() {
+        return IdMotorista;
+    }
+
+    public void setIdMotorista(String idMotorista) {
+        IdMotorista = idMotorista;
+    }
 }
