@@ -1,7 +1,8 @@
 <!DOCTYPE html>
+
 <head>
-     <meta charset="utf-8">
- <title>TruckIn</title>
+  <meta charset="utf-8">
+  <title>Truck-in</title>
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <meta content="" name="keywords">
   <meta content="" name="description">
@@ -9,7 +10,8 @@
   <link href="bootstrap/img/logoIco.png" rel="icon">
   <link href="bootstrap/img/logoIco.png" rel="apple-touch-icon">
 
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Montserrat:300,400,500,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Montserrat:300,400,500,700"
+    rel="stylesheet">
 
   <link href="bootstrap/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
@@ -22,74 +24,79 @@
   <link href="bootstrap/css/style.css" rel="stylesheet">
 
 </head>
-  <!--==========================
+<!--==========================
   Header
   ============================-->
-  <header id="header" class="fixed-top">
-    <div class="container">
-        <a class="scrollto"> <img src="bootstrap/img/Logo.png" Width="70px"></a>
-      <nav class="main-nav float-right d-none d-lg-block">
-        <ul>
-             <li class="active"><a href="admActions">Voltar</a></li>
+<header id="header" class="fixed-top">
+  <div class="container">
+    <a class="scrollto"> <img src="bootstrap/img/Logo.png" Width="70px"></a>
+    <nav class="main-nav float-right d-none d-lg-block">
+      <ul>
+        <li class="active"><a href="admActions">Voltar</a></li>
 
-           <li><a href="/">Sair</a></li>
-        </ul>
-      </nav><!-- .main-nav -->
-    </div>
-  </header><!-- #header -->
+        <li><a href="/">Sair</a></li>
+      </ul>
+    </nav><!-- .main-nav -->
+  </div>
+</header><!-- #header -->
 
-  <!--==========================
+<!--==========================
    Intro Section
  ============================-->
- <section id="intro" class="clearfix">
-   <div class="container">
-       <div class="intro-info">
-     <div id="main-container">
-         <h1>Registrar caminhão</h1>
-         <form id="register-form" action="salvarVeiculo" method="post">
-<div class="full-box">
-  <div class="row about-container">
+<section id="intro" class="clearfix">
+  <div class="container">
+    <div class="intro-info">
+      <div id="main-container">
+        <h1>Registrar caminhão</h1>
+        <form id="register-form" action="salvarVeiculo" method="post">
+          <div class="full-box">
+            <div class="row about-container">
 
-      <div class="col-lg-6">
-          <div class="form-group">
-              <label for="placa">Placa do caminhão</label>
-              <br>
-              <input type="text" class="form-control" name="placa" id="placa" placeholder="EX: XXX0000" data-required>
-          </div>
-          <div class="form-group">
-              <label for="montadora">Montadora</label>
-              <br>
-              <input type="text" class="form-control" name="montadora" id="montadora" placeholder="EX: Mercedes" data-required data-only-numbers="">
-          </div>
-          <div class="half-box">
-              <label for="modelo">Modelo</label>
-              <br>
-              <input type="text" class="form-control" name="modelo" id="modelo" placeholder="EX: 24250" data-required data-only-numbers="">
+              <div class="col-lg-6">
+                <div class="form-group">
+                  <label for="placa">Placa do caminhão</label>
+                  <br>
+                  <input type="text" class="form-control" name="placa" id="placa" placeholder="EX: XXX0000"
+                    data-required>
+                </div>
+                <div class="form-group">
+                  <label for="montadora">Montadora</label>
+                  <br>
+                  <input type="text" class="form-control" name="montadora" id="montadora" placeholder="EX: Mercedes"
+                    data-required data-only-numbers="">
+                </div>
+                <div class="half-box">
+                  <label for="modelo">Modelo</label>
+                  <br>
+                  <input type="text" class="form-control" name="modelo" id="modelo" placeholder="EX: 24250"
+                    data-required data-only-numbers="">
 
-              <br>
-          </div>
-          </div>
-          <div class="col-lg-6">
-              <div class="form-group">
+                  <br>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="form-group">
                   <label for="categoria">Categoria</label>
                   <br>
-                  <input type="text" class="form-control" name="categoria" id="categoria" placeholder="EX: Semipesado" data-required data-only-numbers="">
+                  <input type="text" class="form-control" name="categoria" id="categoria" placeholder="EX: Semipesado"
+                    data-required data-only-numbers="">
                   <br>
-              </div>
-              <div class="form-group">
+                </div>
+                <div class="form-group">
                   <label for="history">Histórico de Manutenção</label>
                   <br>
-                  <textarea id="history" class="form-control" name="history" placeholder="EX: Descrição de manutenções realizadas" rows="4" cols="100"></textarea>
+                  <textarea id="history" class="form-control" name="history"
+                    placeholder="EX: Descrição de manutenções realizadas" rows="4" cols="100"></textarea>
                   <br>
                   <br>
-                  <button class="btn-get-started" type="submit" >Cadastrar Veículo</button>
+                  <button class="btn-get-started" type="submit">Cadastrar Veículo</button>
+                </div>
               </div>
-          </div>
-      </div>
+            </div>
 
-</div>
-         </form>
-</div>
-                   </div>
-                 </div>
- </section><!-- #intro -->
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section><!-- #intro -->

@@ -1,7 +1,8 @@
 <!DOCTYPE html>
+
 <head>
-     <meta charset="utf-8">
- <title>TruckIn</title>
+  <meta charset="utf-8">
+  <title>Truck-in</title>
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <meta content="" name="keywords">
   <meta content="" name="description">
@@ -9,7 +10,8 @@
   <link href="bootstrap/img/logoIco.png" rel="icon">
   <link href="bootstrap/img/logoIco.png" rel="apple-touch-icon">
 
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Montserrat:300,400,500,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Montserrat:300,400,500,700"
+    rel="stylesheet">
 
   <link href="bootstrap/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
@@ -22,85 +24,86 @@
   <link href="bootstrap/css/style.css" rel="stylesheet">
 
 </head>
-  <!--==========================
+<!--==========================
   Header
   ============================-->
-  
-  <header id="header" class="fixed-top">
-    <div class="container">
-        <a class="scrollto"> <img src="bootstrap/img/Logo.png" Width="70px"></a>
-      <nav class="main-nav float-right d-none d-lg-block">
-        <ul>
-          <li class="active"><a href="admActions">Voltar</a></li>
+
+<header id="header" class="fixed-top">
+  <div class="container">
+    <a class="scrollto"> <img src="bootstrap/img/Logo.png" Width="70px"></a>
+    <nav class="main-nav float-right d-none d-lg-block">
+      <ul>
+        <li class="active"><a href="admActions">Voltar</a></li>
 
         <li><a href="/">Sair</a></li>
-        </ul>
-      </nav><!-- .main-nav -->
-    </div>
-  </header><!-- #header -->
+      </ul>
+    </nav><!-- .main-nav -->
+  </div>
+</header><!-- #header -->
 
-  <!--==========================
+<!--==========================
    Intro Section
  ============================-->
- <section id="intro" class="clearfix">
-   <div class="container">
-         <h1>Registrar motorista</h1>
-<div class="full-box">
-    <form action="salvar" method="post">
-  <div class="row about-container">
-      <div class="col-lg-6">
-          <div class="form-group">
+<section id="intro" class="clearfix">
+  <div class="container">
+    <h1>Registrar motorista</h1>
+    <div class="full-box">
+      <form action="salvar" method="post">
+        <div class="row about-container">
+          <div class="col-lg-6">
+            <div class="form-group">
               <label for="name">Nome</label>
               <br>
               <input type="text" class="form-control" id="name" name="name" placeholder="Primeiro Nome" />
-          </div>
-          <div class="form-group">
+            </div>
+            <div class="form-group">
               <label for="lastName">Sobrenome</label>
               <br>
               <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Sobrenome" />
-          </div>
-          <div class="form-group">
+            </div>
+            <div class="form-group">
               <label for="cellPhone">Telefone</label>
               <input type="text" class="form-control" id="cellPhone" name="cellPhone" placeholder="Telefone" />
-          </div>
-          <div class="form-group">
+            </div>
+            <div class="form-group">
               <label for="cpf">CPF</label>
               <br>
               <input type="text" class="form-control" id="cpf" name="cpf" placeholder="CPF" />
-          </div>
+            </div>
 
           </div>
 
-  <div class="col-lg-6">
-      <div class="half-box">
-          <div class="form-group">
-              <label for="cnh">CNH</label>
+          <div class="col-lg-6">
+            <div class="half-box">
+              <div class="form-group">
+                <label for="cnh">CNH</label>
+                <br>
+                <input type="text" class="form-control" id="cnh" name="cnh" placeholder="CNH" />
+              </div>
+              <div class="form-group">
+                <label for="address">Endereço</label>
+                <br>
+                <input type="text" class="form-control" id="address" name="address" placeholder="Endereço" />
+              </div>
+              <div class="form-group">
+                <label for="since">Data Inicial</label>
+                <br>
+                <input type="date" class="form-control" id="since" name="since"
+                  placeholder="Data em que entrou na Empresa" />
+              </div>
+              <div class="form-group">
+                <label for="senha">Senha</label>
+                <br>
+                <input type="text" class="form-control" id="senha" name="senha" placeholder="Senha" />
+              </div>
               <br>
-              <input type="text" class="form-control" id="cnh" name="cnh" placeholder="CNH" />
-          </div>
-          <div class="form-group">
-              <label for="address">Endereço</label>
-              <br>
-              <input type="text" class="form-control" id="address" name="address" placeholder="Endereço" />
-          </div>
-          <div class="form-group">
-              <label for="since">Data Inicial</label>
-              <br>
-              <input type="date" class="form-control" id="since" name="since" placeholder="Data em que entrou na Empresa" />
-          </div>
-          <div class="form-group">
-              <label for="senha">Senha</label>
-              <br>
-              <input type="text" class="form-control" id="senha" name="senha" placeholder="Senha" />
-          </div>
-          <br>
-          <div class="intro-info">
-          <input id="btn-submit" class="btn-get-started" type="submit" value="Cadastrar">
+              <div class="intro-info">
+                <input id="btn-submit" class="btn-get-started" type="submit" value="Cadastrar">
+              </div>
+            </div>
           </div>
         </div>
-      </div>
+      </form>
+    </div>
   </div>
-    </form>
-         </div>
-   </div>
- </section><!-- #intro -->
+</section><!-- #intro -->

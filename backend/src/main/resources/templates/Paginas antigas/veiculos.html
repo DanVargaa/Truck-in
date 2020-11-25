@@ -1,104 +1,110 @@
 <!DOCTYPE html>
+
 <head>
-    <meta charset="utf-8">
-    <title>TruckIn</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="" name="keywords">
-    <meta content="" name="description">
+  <meta charset="utf-8">
+  <title>Truck-in</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
 
-    <link href="bootstrap/img/logoIco.ico" rel="icon">
-    <link href="bootstrap/img/logoIco.ico" rel="apple-touch-icon">
+  <link href="bootstrap/img/logoIco.ico" rel="icon">
+  <link href="bootstrap/img/logoIco.ico" rel="apple-touch-icon">
 
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Montserrat:300,400,500,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Montserrat:300,400,500,700"
+    rel="stylesheet">
 
-    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-    <link href="bootstrap/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-    <link href="bootstrap/animate/animate.min.css" rel="stylesheet">
-    <link href="bootstrap/ionicons/css/ionicons.min.css" rel="stylesheet">
-    <link href="bootstrap/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-    <link href="bootstrap/lightbox/css/lightbox.min.css" rel="stylesheet">
+  <link href="bootstrap/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="bootstrap/animate/animate.min.css" rel="stylesheet">
+  <link href="bootstrap/ionicons/css/ionicons.min.css" rel="stylesheet">
+  <link href="bootstrap/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="bootstrap/lightbox/css/lightbox.min.css" rel="stylesheet">
 
-    <link href="bootstrap/css/styles.css" rel="stylesheet">
+  <link href="bootstrap/css/styles.css" rel="stylesheet">
 
 </head>
 <!--==========================
 Header
 ============================-->
 <header id="header" class="fixed-top">
-    <div class="container">
-<!--        <a class="scrollto"> <img src="bootstrap/img/Logo.png" Width="70px"></a>a-->
-        <nav class="main-nav float-right d-none d-lg-block">
-            <ul>
-                <li class="active"><a href="telaADM.html">Voltar</a></li>
+  <div class="container">
+    <!--        <a class="scrollto"> <img src="bootstrap/img/Logo.png" Width="70px"></a>a-->
+    <nav class="main-nav float-right d-none d-lg-block">
+      <ul>
+        <li class="active"><a href="telaADM.html">Voltar</a></li>
 
-                <li><a href="index.html">Sair</a></li>
-            </ul>
-        </nav><!-- .main-nav -->
-    </div>
+        <li><a href="index.html">Sair</a></li>
+      </ul>
+    </nav><!-- .main-nav -->
+  </div>
 </header><!-- #header -->
 
 <!--==========================
  Intro Section
 ============================-->
 <section id="intro" class="clearfix">
-    <div class="container">
+  <div class="container">
 
-        <div id="veiculos">
-            <h1>Registrar Veículo</h1>
-            <form id="register-form" action="salvarVeiculo" method="post">
-                <div class="full-box">
+    <div id="veiculos">
+      <h1>Registrar Veículo</h1>
+      <form id="register-form" action="salvarVeiculo" method="post">
+        <div class="full-box">
 
-                    <div class="row about-container">
-                        <div class="intro-info"></div>
-                        <div class="col-lg-6">
+          <div class="row about-container">
+            <div class="intro-info"></div>
+            <div class="col-lg-6">
 
-                            <div class="form-group">
-                                <label for="placa">Placa do caminhão</label>
-                                <br>
-                                <input type="text" name="placa" id="placa" placeholder="EX: XXX0000" data-required>
-                                <br>
-                                <br>
-                            </div>
-                            <div class="form-group">
-                            <label for="montadora">Montadora</label>
-                            <br>
-                            <input type="text" name="montadora" id="montadora" placeholder="EX: Mercedes" data-required data-only-numbers="">
-                            <br>
-                            <br>
-                            </div>
-                            <div class="form-group">
-                            <label for="modelo">Modelo</label>
-                            <br>
-                            <input type="text" name="modelo" id="modelo" placeholder="EX: 24250" data-required data-only-numbers="">
-                            <br>
-                            <br>
-                            </div>
-                        </div>
-                        <div class="col-lg-6">
-                            <div class="form-group">
-                                <label for="categoria">Categoria</label>
-                                <br>
-                                <input type="text" name="categoria" id="categoria" placeholder="EX: Semipesado" data-required data-only-numbers="">
-                                <br>
-                                <br>
-                            </div>
-                        </div>
-                        <div class="col-lg-6">
-                            <div class="form-group">
-                                <label for="history">Histórico de Manutenção</label>
-                                <br>
-                                <textarea id="history" name="history" placeholder="EX: Descrição de manutenções realizadas" rows="4" cols="100"></textarea>
-                                <br>
-                                <br>
-                                <button class="btn-get-started" type="submit" >Cadastrar Veículo</button>
-                            </div>                        </div>
+              <div class="form-group">
+                <label for="placa">Placa do caminhão</label>
+                <br>
+                <input type="text" name="placa" id="placa" placeholder="EX: XXX0000" data-required>
+                <br>
+                <br>
+              </div>
+              <div class="form-group">
+                <label for="montadora">Montadora</label>
+                <br>
+                <input type="text" name="montadora" id="montadora" placeholder="EX: Mercedes" data-required
+                  data-only-numbers="">
+                <br>
+                <br>
+              </div>
+              <div class="form-group">
+                <label for="modelo">Modelo</label>
+                <br>
+                <input type="text" name="modelo" id="modelo" placeholder="EX: 24250" data-required data-only-numbers="">
+                <br>
+                <br>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="form-group">
+                <label for="categoria">Categoria</label>
+                <br>
+                <input type="text" name="categoria" id="categoria" placeholder="EX: Semipesado" data-required
+                  data-only-numbers="">
+                <br>
+                <br>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="form-group">
+                <label for="history">Histórico de Manutenção</label>
+                <br>
+                <textarea id="history" name="history" placeholder="EX: Descrição de manutenções realizadas" rows="4"
+                  cols="100"></textarea>
+                <br>
+                <br>
+                <button class="btn-get-started" type="submit">Cadastrar Veículo</button>
+              </div>
+            </div>
 
 
 
-                    </div>
+          </div>
 
-                    <!-- <div class="col-lg-6">
+          <!-- <div class="col-lg-6">
                       <div class="half-box">
                         <label for="estado">Estado</label>
                         <br>
@@ -122,10 +128,10 @@ Header
 
 
 
-                </div>
-            </form>
         </div>
+      </form>
     </div>
+  </div>
 
 
 </section><!-- #intro -->
