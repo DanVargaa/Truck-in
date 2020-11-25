@@ -1,5 +1,6 @@
 package com.backend.truckin.controllers;
 
+import com.backend.truckin.models.IdManager;
 import com.backend.truckin.models.Pacote;
 import com.backend.truckin.repositories.PacoteRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -13,11 +14,16 @@ import javax.validation.Valid;
 @Controller
 public class PacoteController {
     @Autowired
-    private PacoteRepository pacoteRepository;
+    PacoteRepository pacoteRepository;
+    Pacote pac = new Pacote();
+    private IdManager classe = new IdManager();
+
     @RequestMapping("sessaoPacote")
-    public String sessaoPacote(Model model) {
+    public String sessaoPacote(Model model)
+    {
+        long PerfilId = classe.Id_PerfilUsu;
         System.out.println("entrou nesse método adms");
-        Iterable<Pacote> sessaoPacote = pacoteRepository.findAll();
+        Pacote sessaoPacote = pacoteRepository.findById(PerfilId);
         model.addAttribute("sessaoPacote", sessaoPacote);
 
         return "sessaoPacote";
