@@ -41,6 +41,8 @@ public class LoginController{
 
         if(adm != null || usuario != null) {
             if (adm != null && adm.getCellPhone().equals(name) && adm.getSenha().equals(senha)) {
+                System.out.println(adm.getId());
+                classe.Id_Adm = adm.getId();
                 return "redirect:/admActions";
             }
 

@@ -39,7 +39,7 @@ Header
 <body>
 <section id="intro" class="clearfix">
     <div class="container">
-        <div id="allUsers" class="intro-info">
+        <div class="intro-info">
             <table class="table table-hover">
                 <thead>
                 <tr>
@@ -50,12 +50,12 @@ Header
                     <th>Cliente</th>
                 </tr>
                 </thead>
-                <tr th:each="user : ${allUsers}">
-                    <td> <span th:text="${sessaoPacote.pontoDePartida}"></span> </td>
-                    <td> <span th:text="${sessaoPacote.pontoDeChegada}"></span> </td>
-                    <td> <span th:text="${sessaoPacote.descricao}"></span> </td>
-                    <td> <span th:text="${sessaoPacote.titulo}"></span> </td>
-                    <td> <span th:text="${sessaoPacote.cliente}"></span> </td>
+                <tr th:each="pacote : ${listaPacote}">
+                    <td> <span th:text="${pacote.pontoDePartida}"></span> </td>
+                    <td> <span th:text="${pacote.pontoDeChegada}"></span> </td>
+                    <td> <span th:text="${pacote.descricao}"></span> </td>
+                    <td> <span th:text="${pacote.titulo}"></span> </td>
+                    <td> <span th:text="${pacote.cliente}"></span> </td>
                 <tr>
             </table>
         </div>

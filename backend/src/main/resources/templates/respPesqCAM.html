@@ -1,8 +1,10 @@
 <!DOCTYPE html>
-<html> <html xmlns:th="http://www.thymeleaf.org">
+<html>
+<html xmlns:th="http://www.thymeleaf.org">
+
 <head>
     <meta charset="utf-8">
-    <title>Truck-In</title>
+    <title>Truck-in</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -25,37 +27,35 @@ Header
         <a class="scrollto"> <img src="bootstrap/img/Logo.png" Width="70px"></a>
         <nav class="main-nav float-right d-none d-lg-block">
             <ul>
-                <li class="active"><a href="menuUser">Voltar</a></li>
+                <li class="active"><a href="admActions">Voltar</a></li>
                 <li><a href="/">Sair</a></li>
             </ul>
         </nav><!-- .main-nav -->
     </div>
 </header><!-- #header -->
-
 <!--==========================
  Intro Section
 ============================-->
-
 <body>
 <section id="intro" class="clearfix">
     <div class="container">
-        <div id="allUsers" class="intro-info">
+        <div id="respPesqCAM"  class="intro-info">
             <table class="table table-hover">
                 <thead>
                 <tr>
-                    <th>Ponto de Partida</th>
-                    <th>Ponto de Chegada</th>
-                    <th>Descrição</th>
-                    <th>Titulo</th>
-                    <th>Cliente</th>
+                    <th>Id</th>
+                    <th>Placa</th>
+                    <th>Montadora</th>
+                    <th>Categoria</th>
+                    <th>Modelo</th>
                 </tr>
                 </thead>
-                <tr th:each="user : ${allUsers}">
-                    <td> <span th:text="${sessaoPacote.pontoDePartida}"></span> </td>
-                    <td> <span th:text="${sessaoPacote.pontoDeChegada}"></span> </td>
-                    <td> <span th:text="${sessaoPacote.descricao}"></span> </td>
-                    <td> <span th:text="${sessaoPacote.titulo}"></span> </td>
-                    <td> <span th:text="${sessaoPacote.cliente}"></span> </td>
+                <tr th:each="veiculo : ${respPesqCAM}">
+                    <td> <span th:text="${veiculo.id}"></span> </td>
+                    <td> <span th:text="${veiculo.placa}"></span> </td>
+                    <td> <span th:text="${veiculo.montadora}"></span> </td>
+                    <td> <span th:text="${veiculo.categoria}"></span> </td>
+                    <td> <span th:text="${veiculo.modelo}"></span> </td>
                 <tr>
             </table>
         </div>

@@ -19,7 +19,7 @@ public class Pacote extends AuditModel{
         this.descricao = descricao;
         this.titulo = titulo;
         this.cliente = cliente;
-        this.IdMotorista = IdMotorista;
+        this.idMotorista = idMotorista;
     }
     @Id
     @GeneratedValue(strategy= GenerationType.AUTO)
@@ -45,7 +45,9 @@ public class Pacote extends AuditModel{
     @Size(max = 100)
     private String cliente;
 
-    private @NotBlank String IdMotorista;
+    private
+    @NotBlank String idMotorista;
+
 
     public Long getId() {
         return id;
@@ -96,10 +98,10 @@ public class Pacote extends AuditModel{
     }
 
     public String getIdMotorista() {
-        return IdMotorista;
+        return idMotorista;
     }
 
     public void setIdMotorista(String idMotorista) {
-        IdMotorista = idMotorista;
+        this.idMotorista = idMotorista;
     }
 }

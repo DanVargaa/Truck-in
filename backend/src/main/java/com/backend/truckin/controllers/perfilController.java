@@ -14,6 +14,8 @@ public class perfilController {
     @Autowired
     UserRepository userRepository;
     private IdManager classe = new IdManager();
+
+
     @RequestMapping("telaPerfil")
     public String perfil(Model model) {
         long PerfilId = classe.Id_PerfilUsu;

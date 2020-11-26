@@ -18,15 +18,14 @@ public class PacoteController {
     Pacote pac = new Pacote();
     private IdManager classe = new IdManager();
 
-    @RequestMapping("sessaoPacote")
-    public String sessaoPacote(Model model)
+    @RequestMapping("listaPacote")
+    public String listaPacote(Model model)
     {
-        long PerfilId = classe.Id_PerfilUsu;
-        System.out.println("entrou nesse método adms");
-        Pacote sessaoPacote = pacoteRepository.findById(PerfilId);
-        model.addAttribute("sessaoPacote", sessaoPacote);
-
-        return "sessaoPacote";
+        String PerfilId = String.valueOf(classe.Id_PerfilUsu);
+        System.out.println("entrou nesse método pacote");
+        Iterable<Pacote> listaPacote = pacoteRepository.findByIdMotorista(PerfilId);
+      model.addAttribute("listaPacote", listaPacote);
+        return "listaPacote";
     }
 
 }

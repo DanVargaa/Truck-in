@@ -39,7 +39,11 @@ Header
 <body>
   <section id="intro" class="clearfix">
     <div class="container">
-      <div id="allUsers" class="intro-info">
+      <div id="allUsers"  class="intro-info">
+        <form action="pesqNome" method="get">
+        <input type="text" id="nome" name="nome" placeholder="Pesquise pelo Nome" />
+        <input id="btn-submit" class="btn-get-started" type="submit" value="Pesquisar">
+        </form>
         <table class="table table-hover">
           <thead>
             <tr>

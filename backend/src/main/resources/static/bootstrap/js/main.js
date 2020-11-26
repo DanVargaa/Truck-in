@@ -10,6 +10,7 @@
     }
   });
 
+
   // Back to top button
   $(window).scroll(function() {
     if ($(this).scrollTop() > 100) {
@@ -118,6 +119,25 @@
     loop: true,
     items: 1
   });
-
 })(jQuery);
+
+function save(){
+    window.localStorage.setItem('rel', $('#rel').val(),'rel2', $('#rel2').val(), 'rel3', $('#rel3').val(),
+                                'relF', $('#relF').val()'rel2F', $('#rel2F').val()'rel3F', $('#rel3F').val());
+                                alert("Salvou!");
+
+}
+function load(){
+    $('#HoraInicial').val(window.localStorage.getItem('rel'),
+    $('#HoraFinal').val(window.localStorage.getItem('relF'),
+    $('#DescansoInicial').val(window.localStorage.getItem('rel2'),
+    $('#DescansoFinal').val(window.localStorage.getItem('rel2F'),
+    $('#ForaInicial').val(window.localStorage.getItem('rel3'),
+    $('#ForaFinal').val(window.localStorage.getItem('rel3F'));
+    alert("Carregou!");
+}
+function erase(){
+    window.localStorage.removeItem('rel','relF','rel2','rel2F','rel3','rel3F');
+}
+
 
