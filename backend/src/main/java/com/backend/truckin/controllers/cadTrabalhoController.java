@@ -2,10 +2,7 @@ package com.backend.truckin.controllers;
 
 
 import com.backend.truckin.models.*;
-import com.backend.truckin.repositories.PacoteRepository;
-import com.backend.truckin.repositories.SessaoRepository;
-import com.backend.truckin.repositories.UserRepository;
-import com.backend.truckin.repositories.VeiculoRepository;
+import com.backend.truckin.repositories.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -26,6 +23,8 @@ public class cadTrabalhoController {
 
     @Autowired
     SessaoRepository sessaoRepository;
+    @Autowired
+    LOGRepository logRepository;
 
     @Autowired
     VeiculoRepository veiculoRepository;
@@ -36,7 +35,6 @@ public class cadTrabalhoController {
     @RequestMapping("cadTrabalho")
     public String cadTrabalho(Model model, Model model2, Model model3)
     {
-        System.out.println(classe.Id_Adm +" Esse usuário fez a pesquisa de todos os usuários, veículos e pacotes pelas DDLs da página cadTrabalho");
         Iterable<User> cadTrabalho = userRepository.findAll();
         Iterable<Veiculo> veiculo =  veiculoRepository.findAll();
         Iterable<Pacote> pacote = pacoteRepository.findAll();
@@ -49,12 +47,19 @@ public class cadTrabalhoController {
 
     @RequestMapping(value = "cadSessao", method = RequestMethod.POST)
     public String cadSessao(@Valid SessaoTrabalho sessaoTrabalho, Model model) {
+        LOG logSessaoDeTrabalho = new LOG();
+        logSessaoDeTrabalho.setAcaoEfetuada("Construiu a Sessão de trabalho");
+        logSessaoDeTrabalho.setIdAdm(classe.Id_Adm);
+        logSessaoDeTrabalho.setIdUser(sessaoTrabalho.getIdMot());
+        logRepository.save(logSessaoDeTrabalho);
+
+
         System.out.println(sessaoTrabalho);
         sessaoTrabalho.setStatus((long) 0);
         sessaoRepository.save(sessaoTrabalho);
         Iterable<SessaoTrabalho> cadSessao = sessaoRepository.findAll();
         model.addAttribute("cadTrabalho", cadSessao);
-        System.out.println("Checa o banco ai");
+
         return "cadTrabalho";
     }
 
