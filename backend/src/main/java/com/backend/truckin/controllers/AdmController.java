@@ -1,7 +1,10 @@
 package com.backend.truckin.controllers;
 
 import com.backend.truckin.models.Adm;
+import com.backend.truckin.models.IdManager;
+import com.backend.truckin.models.LOG;
 import com.backend.truckin.repositories.AdmRepository;
+import com.backend.truckin.repositories.LOGRepository;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,8 +21,9 @@ import javax.validation.Valid;
 public class AdmController{
 
     private Logger logger = LoggerFactory.getLogger(this.getClass());
-
-
+    IdManager classe = new IdManager();
+    @Autowired
+    private LOGRepository logRepository;
 
 
     @Autowired
@@ -27,16 +31,16 @@ public class AdmController{
 
     @RequestMapping("admCad")
     public String adms(Model model) {
-        System.out.println("entrou nesse método adms");
-        Iterable<Adm> adms = admRepository.findAll();
-        model.addAttribute("adms", adms);
-
         return "admCad";
     }
 
     @RequestMapping(value = "salvarAdm", method = RequestMethod.POST)
     public String salvar(@Valid Adm adm, Model model) {
-
+        LOG logSessaoDeTrabalho = new LOG();
+        logSessaoDeTrabalho.setAcaoEfetuada("Cadastrou um Administrador");
+        logSessaoDeTrabalho.setIdAdm(classe.Id_Adm);
+        logSessaoDeTrabalho.setIdUser(adm.getId());
+        logRepository.save(logSessaoDeTrabalho);
         System.out.println(adm);
         admRepository.save(adm);
 

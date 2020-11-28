@@ -1,9 +1,11 @@
 package com.backend.truckin.controllers;
 
 import com.backend.truckin.models.IdManager;
+import com.backend.truckin.models.LOG;
 import com.backend.truckin.models.User;
 import com.backend.truckin.models.Adm;
 import com.backend.truckin.repositories.AdmRepository;
+import com.backend.truckin.repositories.LOGRepository;
 import com.backend.truckin.repositories.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -19,6 +21,8 @@ public class LoginController{
     private UserRepository userRepository;
     @Autowired
     private AdmRepository admRepository;
+    @Autowired
+    private LOGRepository logRepository;
 
     private IdManager classe = new IdManager();
 
@@ -43,6 +47,12 @@ public class LoginController{
             if (adm != null && adm.getCellPhone().equals(name) && adm.getSenha().equals(senha)) {
                 System.out.println(adm.getId());
                 classe.Id_Adm = adm.getId();
+                LOG logSessaoDeTrabalho = new LOG();
+                logSessaoDeTrabalho.setAcaoEfetuada("Acessou o sistema");
+                logSessaoDeTrabalho.setIdAdm(classe.Id_Adm);
+                logSessaoDeTrabalho.setIdUser(adm.getId());
+                logRepository.save(logSessaoDeTrabalho);
+                System.out.println(adm);
                 return "redirect:/admActions";
             }
 
@@ -50,6 +60,11 @@ public class LoginController{
             {
                 System.out.println(usuario.getId());
              classe.Id_PerfilUsu = usuario.getId();
+                LOG logSessaoDeTrabalho = new LOG();
+                logSessaoDeTrabalho.setAcaoEfetuada("Acessou o sistema");
+                logSessaoDeTrabalho.setIdAdm(classe.Id_PerfilUsu);
+                logSessaoDeTrabalho.setIdUser(usuario.getId());
+                logRepository.save(logSessaoDeTrabalho);
                 return "redirect:/menuUser";
 
             }else{
