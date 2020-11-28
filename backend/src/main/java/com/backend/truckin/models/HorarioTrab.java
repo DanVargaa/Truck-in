@@ -1,15 +1,10 @@
 package com.backend.truckin.models;
 
+import javax.persistence.*;
 import javax.validation.constraints.NotBlank;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
 
 @Entity (name = "horas")
 public class HorarioTrab extends AuditModel{
-
-    public HorarioTrab() { }
 
     public HorarioTrab(@NotBlank String hi, @NotBlank String hf, @NotBlank String di, @NotBlank String df, @NotBlank String pi, @NotBlank String pf, @NotBlank String idMotoristaH) {
         this.hi = hi;

@@ -17,6 +17,7 @@
     <link href="bootstrap/lib/lightbox/css/lightbox.min.css" rel="stylesheet">
     <link href="bootstrap/css/style.css" rel="stylesheet">
 
+
     <script>
   function HorarioI1()
   {
@@ -71,10 +72,16 @@
   var s=hora.getSeconds();
   //Exibindo no HTML
   document.getElementById('pf').value=h+":"+m+":"+s;
+
   }
 
     </script>
-    <script src="bootstrap/js/main.js"> </script>
+
+
+    <script src="bootstrap/js/main.js">
+
+    </script>
+
 
 </head>
 <!--==========================
@@ -102,7 +109,7 @@ Header
         <h1>Sessão de Trabalho</h1>
 
         <div class="row about-container">
-            <div class="col-lg-6">
+            <div class="col-lg-4">
                 <form id="sessaoTrabalho" action="salvarHorario" method="post">
                     <div class="intro-info">
                         <div class="form-group">
@@ -116,17 +123,16 @@ Header
                            <h3> Descanso</h3>
                            <b >Inicio: </b>        <input type="text" style="color: black;" name="di" id="di">
                            <br>
-                           <b style="margin-left: 13px;">Fim: </b>       <input type="text" style="color: red;"  name="df" id="df">
+                           <b style="margin-left: 13px;">Fim: </b> <input type="text" style="color: red;"  name="df" id="df">
                        </div>
                         <div class="form-group">
                             <br>
                             <h3>Fora de Trabalho</h3>
-                            <b >Inicio: </b>       <input type="text" style="color: black;" name="pi"  id="pi">
+                            <b >Inicio: </b> <input type="text" style="color: black;" name="pi"  id="pi">
                             <br>
-                            <b style="margin-left: 13px;">Fim: </b>     <input type="text" style="color: red;"  name="pf" id="pf">
+                            <b style="margin-left: 13px;">Fim: </b>  <input type="text" style="color: red;"  name="pf" id="pf">
                             <br>
                             <br>
-
                         </div>
                     </div>
                     <div class="intro-info">
@@ -135,12 +141,6 @@ Header
                 </form>
             </div>
             <div class="col-lg-6">
-                <form action="buscarID" method="get">
-                    <div th:each="user : ${sessaoTrabalho}">
-                        <input type="button">
-                        <p id="idUsu" th:text="${user.id}"></p>
-                    </div>
-                </form>
 
                 <div class="intro-info">
                     <button onclick="HorarioI1()"class="btn-get-started2"  style="margin-top: 70px;" id=btnRel >Iniciar</button>
@@ -152,7 +152,7 @@ Header
                 </div>
                 <div class="intro-info">
                     <button onclick="HorarioI3()"class="btn-get-started2" style="margin-top: 70px;" id="btnRel3">Iniciar</button>
-                    <button onclick="HorarioF3()"class="btn-get-started2" style="margin-top: 70px;" id="btnRel3F">Parar</button>
+                    <button onclick="HorarioF3()" class="btn-get-started2" style="margin-top: 70px;" id="btnRel3F">Parar</button>
                 </div>
             </div>
         </div>

@@ -11,5 +11,6 @@ import org.springframework.stereotype.Repository;
     public interface PacoteRepository extends CrudRepository<Pacote, Long>
     {
         Iterable<Pacote>  findByIdMotorista(String PerfilId);
+        Pacote findById(long idPac);
     }
 

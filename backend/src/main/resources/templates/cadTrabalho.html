@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-
+<html xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="utf-8">
     <title>Truck-in</title>
@@ -39,68 +39,36 @@
     <div class="container">
         <h1>Cadastrar Trabalho</h1>
         <div class="full-box">
-            <form action="salvar" method="post"> <!-- FAZER O EVENTO SALVAR -->
-                <div class="row about-container">
-                    <div class="col-lg-6">
-                        <div class="form-group">
-                            <label for="HoraInicial">Inicio do Trabalho</label>
-                            <br>
-                            <input type="text" class="form-control"  id="HoraInicial" name="HoraFinal" />
-                        </div>
-                        <div class="form-group">
-                            <label for="HoraFinal">Final do Trabalho</label>
-                            <br>
-                            <input type="text" class="form-control"  id="HoraFinal" name="HoraFinal" />
-                        </div>
-                        <div class="form-group">
-                            <label for="DescansoInicial">Inicio do Descanso</label>
-                            <input type="text" class="form-control" id="DescansoInicial" name="DescansoInicial"/>
-                        </div>
-                        <div class="form-group">
-                            <label for="DescansoFinal">Fim do Descanso</label>
-                            <br>
-                            <input type="text" class="form-control" id="DescansoFinal" name="DescansoFinal" />
-                        </div>
-                        <div class="form-group">
-                            <label for="ForaInicial">Inicio Livre</label>
-                            <br>
-                            <input type="text" class="form-control" id="ForaInicial" name="ForaInicial" />
-                        </div>
-                        <div class="form-group">
-                            <label for="ForaFinal">Fim Livre</label>
-                            <br>
-                            <input type="text" class="form-control" id="ForaFinal" name="ForaFinal" />
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="half-box">
-                            <div class="form-group">
-                                <label for="cnh">CNH</label>
-                                <br>
-                                <input type="text" class="form-control" id="cnh" name="cnh" placeholder="CNH" />
-                            </div>
-                            <div class="form-group">
-                                <label for="address">Endereço</label>
-                                <br>
-                                <input type="text" class="form-control" id="address" name="address" placeholder="Endereço" />
-                            </div>
-                            <div class="form-group">
-                                <label for="since">Data Inicial</label>
-                                <br>
-                                <input type="date" class="form-control" id="since" name="since"
-                                       placeholder="Data em que entrou na Empresa" />
-                            </div>
-                            <div class="form-group">
-                                <label for="senha">Senha</label>
-                                <br>
-                                <input type="password" class="form-control" id="senha" name="senha" placeholder="Senha" />
-                            </div>
-                            <br>
-                            <div class="intro-info">
-                                <input id="btn-submit" class="btn-get-started" type="submit" value="Cadastrar">
-                            </div>
-                        </div>
-                    </div>
+            <form action="cadSessao" method="post"> <!-- FAZER O EVENTO SALVAR -->
+                <div class="half-box">
+                    <b for="motoristas">Selecine o Motorista: </b>
+                    <select  name="idMot" id="idMot" class="form-group">
+                        <option >Selecione um Motorista</option>
+                        <option th:each="user : ${mot}" th:value="${user.id}" th:text="${user.name}" selected="selected"> </option>
+                    </select>
+                    <br>
+                    <b>Selecione o Veiculo: </b>
+                    <select  name="veiculo" id="veiculo" class="form-group">
+                        <option >Selecione um Veiculo</option>
+                        <option th:each="veiculo : ${vei}" th:value="${veiculo.placa}" th:text="${veiculo.placa}" selected="selected"> </option>
+                    </select>
+                    <br>
+                    <b>Selecione o Pacote</b>
+                    <select  name="idPac" id="idPac" class="form-group">
+                        <option >Selecione um Pacote</option>
+                        <option th:each="pacote : ${pac}" th:value="${pacote.id}" th:text="${pacote.titulo}" selected="selected"> </option>
+                    </select>
+                    <br>
+                    <b>Digite o Titulo: </b>
+                    <br>
+                    <input type="text" class="form-group" id="tituloTrab" name="tituloTrab"/>
+                    <br>
+                    <b>Digite o Nome do Cliente: </b>
+                    <br>
+                    <input type="text" class="form-group" id="nomeCliente" name="nomeCliente"/>
+                </div>
+                <div class="intro-info">
+                    <input id="btn-submit" class="btn-get-started" type="submit" value="Cadastrar">
                 </div>
             </form>
         </div>

@@ -28,7 +28,7 @@ public class sessaoTrabalhoController
     @RequestMapping("sessaoTrabalho")
     public String sessaoTrabalho()
     {
-
+        System.out.println(classe.Id_Trabalho);
         return ("sessaoTrabalho");
     }
     @RequestMapping(value = "salvarHorario", method = RequestMethod.POST)

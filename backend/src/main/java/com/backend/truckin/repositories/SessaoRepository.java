@@ -1,13 +1,17 @@
 package com.backend.truckin.repositories;
 
 
-import com.backend.truckin.models.HistoricoSessao;
-import com.backend.truckin.models.Pacote;
+import com.backend.truckin.models.SessaoTrabalho;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 
+import java.util.Collections;
+import java.util.List;
+
 @Repository
-public interface SessaoRepository extends CrudRepository<HistoricoSessao, Long>
+public interface SessaoRepository extends CrudRepository<SessaoTrabalho, Long>
 {
-    SessaoRepository findById(long PerfilId);
+    Iterable<SessaoTrabalho> findById(long id);
+    Iterable<SessaoTrabalho> findByIdMotAndStatus(long id, long status);
+    Iterable<SessaoTrabalho> findByStatus(long status);
 }

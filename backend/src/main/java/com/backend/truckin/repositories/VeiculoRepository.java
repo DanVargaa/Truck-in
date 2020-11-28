@@ -9,4 +9,5 @@ import org.springframework.stereotype.Repository;
 public interface VeiculoRepository extends CrudRepository<Veiculo, Long>
 {
     Iterable<Veiculo> findAllByPlaca(String NomePesqPlaca);
+    Veiculo findById(long idVei);
 }

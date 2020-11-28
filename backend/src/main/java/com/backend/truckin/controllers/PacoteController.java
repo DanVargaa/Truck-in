@@ -21,9 +21,8 @@ public class PacoteController {
     @RequestMapping("listaPacote")
     public String listaPacote(Model model)
     {
-        String PerfilId = String.valueOf(classe.Id_PerfilUsu);
         System.out.println("entrou nesse método pacote");
-        Iterable<Pacote> listaPacote = pacoteRepository.findByIdMotorista(PerfilId);
+        Iterable<Pacote> listaPacote = pacoteRepository.findAll();
       model.addAttribute("listaPacote", listaPacote);
         return "listaPacote";
     }

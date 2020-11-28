@@ -3,6 +3,7 @@ package com.backend.truckin.models;
 import javax.persistence.*;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.Size;
+import java.util.List;
 
 
 @Entity (name = "users")
@@ -56,8 +57,6 @@ public class User extends AuditModel{
     @NotBlank
     @Size(min = 8, max = 8)
     private String since;
-
-
 
     public Long getId() {
         return id;

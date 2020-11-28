@@ -122,9 +122,8 @@
 })(jQuery);
 
 function save(){
-    window.localStorage.setItem('rel', $('#rel').val(),'rel2', $('#rel2').val(), 'rel3', $('#rel3').val(),
-                                'relF', $('#relF').val()'rel2F', $('#rel2F').val()'rel3F', $('#rel3F').val());
-                                alert("Salvou!");
+
+      alert("Salvou!");
 
 }
 function load(){
