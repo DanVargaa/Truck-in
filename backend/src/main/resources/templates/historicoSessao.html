@@ -8,7 +8,7 @@
     <meta content="" name="description">
     <link href="bootstrap/img/logoIco.png" rel="icon">
     <link href="img/logoIco.png" rel="apple-touch-icon">
-    <link href="bootstrap/https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Montserrat:300,400,500,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Montserrat:300,400,500,700" rel="stylesheet">
     <link href="bootstrap/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="bootstrap/lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
     <link href="bootstrap/lib/animate/animate.min.css" rel="stylesheet">
@@ -38,13 +38,14 @@ Header
 <body>
 <section id="intro" class="clearfix">
     <div class="container">
-        <div id="allUsers" class="intro-info">
-            <table class="table table-hover">
+        <div class="intro-info">
+            <table  class="table table-hover">
                 <thead>
                 <tr>
-                    <th>Veiculo</th>
-                    <th>Data</th>
-                    <th>Pacote</th>
+                    <th>Titulo</th>
+                    <th>Ident. Pacote</th>
+                    <th>Veículo</th>
+                    <th>Cliente</th>
                     <th>Hora inicial</th>
                     <th>Hora final</th>
                     <th>Começo de descanso</th>
@@ -53,15 +54,17 @@ Header
                     <th>Fim de uso fora de Sessão</th>
                 </tr>
                 </thead>
-                <tr th:each="historicosessao : ${historicoSessao}">
-                    <td> <span th:text="${historicoSessao.data}"></span> </td>
-                    <td> <span th:text="${historicoSessao.pacote}"></span> </td>
-                    <td> <span th:text="${historicoSessao.horaInicial}"></span> </td>
-                    <td> <span th:text="${historicoSessao.horaFinal}"></span> </td>
-                    <td> <span th:text="${historicoSessao.comecoDescanso}"></span> </td>
-                    <td> <span th:text="${historicoSessao.fimDescanso}"></span> </td>
-                    <td> <span th:text="${historicoSessao.inicioUsoForaDaSessao}"></span> </td>
-                    <td> <span th:text="${historicoSessao.fimUsoForaDaSessao}"></span> </td>
+                <tr th:each="histTrab : ${histTrab}">
+                    <td> <span th:text="${histTrab.tituloTrab}"></span> </td>
+                    <td> <span th:text="${histTrab.idPac}"></span> </td>
+                    <td> <span th:text="${histTrab.veiculo}"></span> </td>
+                    <td> <span th:text="${histTrab.nomeCliente}"></span> </td>
+                    <td> <span th:text="${histTrab.hi}"></span> </td>
+                    <td> <span th:text="${histTrab.hf}"></span> </td>
+                    <td> <span th:text="${histTrab.di}"></span> </td>
+                    <td> <span th:text="${histTrab.df}"></span> </td>
+                    <td> <span th:text="${histTrab.pi}"></span> </td>
+                    <td> <span th:text="${histTrab.pf}"></span> </td>
                 <tr>
             </table>
         </div>

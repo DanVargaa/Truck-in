@@ -20,24 +20,10 @@ public class HistoricoSessaoController {
 
     @RequestMapping("historicoSessao")
     public String historicoSessao(Model model) {
-  /*      long PerfilId = classe.Id_PerfilUsu;
-        System.out.println("entrou nesse método historico de sessao");
-        SessaoTrabalho historicoSessao = sessaoRepository.findById(PerfilId);
-        model.addAttribute("historicoSessao", historicoSessao);*/
-
+        long id= classe.Id_PerfilUsu;
+        Iterable<SessaoTrabalho> histTrab = sessaoRepository.findByIdMotAndStatus(id,1);
+        model.addAttribute("histTrab", histTrab);
         return "historicoSessao";
     }
-    @RequestMapping(value = "salvarSessao", method = RequestMethod.POST)
-    public String salvar(@Valid SessaoTrabalho sessao, Model model) {
-
-        System.out.println(sessao);
-        sessaoRepository.save(sessao);
-
-        Iterable<SessaoTrabalho> historicoSessao = sessaoRepository.findAll();
-        model.addAttribute("historicoSessao", historicoSessao);
-
-        return "adms";
-    }
-
 
 }

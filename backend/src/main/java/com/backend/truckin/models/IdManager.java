@@ -5,5 +5,5 @@ public class IdManager {
     public static long Id_Adm;
     public static String NomePesqUsu;
     public static String NomePesqPlaca;
-    public static String Id_Trabalho;
+    public static long Id_Trabalho;
 }

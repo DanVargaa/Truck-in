@@ -204,8 +204,12 @@ svg {
   vertical-align: middle;
 }
 
+
+
+
 table {
   border-collapse: collapse;
+  text-align: center;
 }
 
 caption {
@@ -217,6 +221,7 @@ caption {
 }
 
 th {
+
   text-align: inherit;
 }
 

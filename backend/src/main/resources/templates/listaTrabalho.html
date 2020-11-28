@@ -1,13 +1,15 @@
 <!DOCTYPE html>
+<html>
 <html xmlns:th="http://www.thymeleaf.org">
+
 <head>
     <meta charset="utf-8">
-    <title>Truck-In</title>
+    <title>Truck-in</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
     <link href="bootstrap/img/logoIco.png" rel="icon">
-    <link href="img/logoIco.png" rel="apple-touch-icon">
+    <link href="bootstrap/img/logoIco.png" rel="apple-touch-icon">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Montserrat:300,400,500,700" rel="stylesheet">
     <link href="bootstrap/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="bootstrap/lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
@@ -15,7 +17,7 @@
     <link href="bootstrap/lib/ionicons/css/ionicons.min.css" rel="stylesheet">
     <link href="bootstrap/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
     <link href="bootstrap/lib/lightbox/css/lightbox.min.css" rel="stylesheet">
-    <link href="bootstrap/css/style.css" rel="stylesheet">x
+    <link href="bootstrap/css/style.css" rel="stylesheet">
 </head>
 <!--==========================
 Header
@@ -39,43 +41,28 @@ Header
 <section id="intro" class="clearfix">
     <div class="container">
         <div class="intro-info">
-            <table  class="table table-hover">
+            <form action="salvarID" method="get">
+                <input type="text" id="idTrab" name="idTrab" placeholder="Digite ID do trabalho" />
+                <input id="btn-submit" class="btn-get-started" type="submit" value="Começar">
+            </form>
+            <table class="table table-hover">
                 <thead>
                 <tr>
+                    <th>Id</th>
                     <th>Titulo</th>
-                    <th>Ident. Pacote</th>
-                    <th>Veículo</th>
                     <th>Cliente</th>
-                    <th>Hora inicial</th>
-                    <th>Hora final</th>
-                    <th>Começo de descanso</th>
-                    <th>Fim de descanso</th>
-                    <th>Uso fora de Sessão</th>
-                    <th>Fim de uso fora de Sessão</th>
+                    <th>Veiculo</th>
                 </tr>
                 </thead>
-                <tr th:each="histTrab : ${histTrab}">
-                    <td> <span th:text="${histTrab.tituloTrab}"></span> </td>
-                    <td> <span th:text="${histTrab.idPac}"></span> </td>
-                    <td> <span th:text="${histTrab.veiculo}"></span> </td>
-                    <td> <span th:text="${histTrab.nomeCliente}"></span> </td>
-                    <td> <span th:text="${histTrab.hi}"></span> </td>
-                    <td> <span th:text="${histTrab.hf}"></span> </td>
-                    <td> <span th:text="${histTrab.di}"></span> </td>
-                    <td> <span th:text="${histTrab.df}"></span> </td>
-                    <td> <span th:text="${histTrab.pi}"></span> </td>
-                    <td> <span th:text="${histTrab.pf}"></span> </td>
+                <tr th:each="trab : ${listTrab}">
+                    <td> <span th:text="${trab.id}"></span> </td>
+                    <td> <span th:text="${trab.tituloTrab}"></span> </td>
+                    <td> <span th:text="${trab.nomeCliente}"></span> </td>
+                    <td> <span th:text="${trab.veiculo}"></span> </td>
                 <tr>
             </table>
         </div>
     </div>
-
-
-
-
-    <div>
-    </div>
-
 </section><!-- #intro -->
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>

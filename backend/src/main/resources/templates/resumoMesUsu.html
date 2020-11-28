@@ -42,38 +42,20 @@ Header
             <table  class="table table-hover">
                 <thead>
                 <tr>
-                    <th>Titulo</th>
-                    <th>Ident. Pacote</th>
-                    <th>Veículo</th>
-                    <th>Cliente</th>
-                    <th>Hora inicial</th>
-                    <th>Hora final</th>
-                    <th>Começo de descanso</th>
-                    <th>Fim de descanso</th>
-                    <th>Uso fora de Sessão</th>
-                    <th>Fim de uso fora de Sessão</th>
+                    <th>Mês Trabalhado</th>
+                    <th>Horas Reguladas</th>
+                    <th>Horas Extras</th>
+                    <th>Ganho Total</th>
                 </tr>
                 </thead>
-                <tr th:each="histTrab : ${histTrab}">
-                    <td> <span th:text="${histTrab.tituloTrab}"></span> </td>
-                    <td> <span th:text="${histTrab.idPac}"></span> </td>
-                    <td> <span th:text="${histTrab.veiculo}"></span> </td>
-                    <td> <span th:text="${histTrab.nomeCliente}"></span> </td>
-                    <td> <span th:text="${histTrab.hi}"></span> </td>
-                    <td> <span th:text="${histTrab.hf}"></span> </td>
-                    <td> <span th:text="${histTrab.di}"></span> </td>
-                    <td> <span th:text="${histTrab.df}"></span> </td>
-                    <td> <span th:text="${histTrab.pi}"></span> </td>
-                    <td> <span th:text="${histTrab.pf}"></span> </td>
+                <tr th:each="resSal : ${resSal}">
+                    <td> <span th:text="${resSal.campoMes}"></span> </td>
+                    <td> <span th:text="${resSal.CampoHrRegular}"></span> </td>
+                    <td> <span th:text="${resSal.CampoHrExtra}"></span> </td>
+                    <td> <span th:text="${resSal.GanhoTotal}"></span> </td>
                 <tr>
             </table>
         </div>
-    </div>
-
-
-
-
-    <div>
     </div>
 
 </section><!-- #intro -->
