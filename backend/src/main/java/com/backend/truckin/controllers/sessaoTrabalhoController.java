@@ -3,6 +3,8 @@ package com.backend.truckin.controllers;
 
 
 
+import com.backend.truckin.controllers.forms.SessaoTrabalhoForm;
+import com.backend.truckin.mappers.SessaoTrabalhoMapper;
 import com.backend.truckin.models.*;
 import com.backend.truckin.repositories.HorarioRepository;
 import com.backend.truckin.repositories.SessaoRepository;
@@ -21,6 +23,7 @@ public class sessaoTrabalhoController
 {
     @Autowired
     private SessaoRepository sessaoRepository;
+
     IdManager classe = new IdManager();
 
     @RequestMapping("sessaoTrabalho")
@@ -30,19 +33,17 @@ public class sessaoTrabalhoController
         return ("sessaoTrabalho");
     }
     @RequestMapping(value = "salvarHorario", method = RequestMethod.POST)
-    public String salvarHorario(@Valid SessaoTrabalho updateTrab, Model model)
+    public String salvarHorario(@Valid SessaoTrabalhoForm updateTrab, Model model)
     {
+
+        SessaoTrabalhoMapper mapper = new SessaoTrabalhoMapper();
+
         long id = classe.Id_Trabalho;
         long status = 1;
         updateTrab.setId(id);
-        SessaoTrabalho user = sessaoRepository.findById(id);
-        updateTrab.setNomeCliente(user.getNomeCliente());
-        updateTrab.setIdMot(user.getIdMot());
-        updateTrab.setIdPac(user.getIdPac());
-        updateTrab.setTituloTrab(user.getTituloTrab());
-        updateTrab.setVeiculo(user.getVeiculo());
-        updateTrab.setStatus(status);
-        sessaoRepository.save(updateTrab);
+        SessaoTrabalho sessaoTrabalhoUpdate = sessaoRepository.findById(id);
+        SessaoTrabalho sessaoTrabalho = mapper.map(sessaoTrabalhoUpdate, updateTrab );
+        sessaoRepository.save(sessaoTrabalho);
         System.out.println(updateTrab);
 
 

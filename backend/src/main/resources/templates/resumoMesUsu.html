@@ -39,21 +39,39 @@ Header
 <section id="intro" class="clearfix">
     <div class="container">
         <div class="intro-info">
+            <form action="buscaMes" method="get">
+                <b>Escolha o mês que deseja:</b>
+                <select  name="mes" id="mes" class="form-group">
+                    <option selected="selected" >Escolhar um mês</option>
+                    <option value="0"> Janeiro </option>
+                    <option value="1"> Fevereiro </option>
+                    <option value="2"> Março </option>
+                    <option value="3"> Abril </option>
+                    <option value="4"> Maio </option>
+                    <option value="5"> Junho </option>
+                    <option value="6"> Julho </option>
+                    <option value="7"> Agosto </option>
+                    <option value="8"> Setembro </option>
+                    <option value="9"> Outrubro </option>
+                    <option value="10"> Novembro </option>
+                    <option value="11"> Dezembro </option>
+                </select>
+                <input id="btn-submit" class="btn-get-started" type="submit" value="Escolher">
+            </form>
             <table  class="table table-hover">
                 <thead>
                 <tr>
-                    <th>Mês Trabalhado</th>
-                    <th>Horas Reguladas</th>
+                    <th>Horas Regulares</th>
                     <th>Horas Extras</th>
                     <th>Ganho Total</th>
                 </tr>
                 </thead>
-                <!--<tr th:each="resSal : ${resSal}">
-                    <td> <span th:text="${resSal.campoMes}"></span> </td>
-                    <td> <span th:text="${resSal.CampoHrRegular}"></span> </td>
-                    <td> <span th:text="${resSal.CampoHrExtra}"></span> </td>
-                    <td> <span th:text="${resSal.GanhoTotal}"></span> </td>
-                <tr>-->
+                <tr>
+
+                    <td> <span th:text="${resSal?.horasRegulares}"></span> </td>
+                    <td> <span th:text="${resSal?.horasExtras}"></span> </td>
+                    <td> <span th:text="${resSal?.ganhos}"></span> </td>
+                <tr>
             </table>
         </div>
     </div>

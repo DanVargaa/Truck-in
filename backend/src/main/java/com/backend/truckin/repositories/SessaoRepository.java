@@ -18,7 +18,7 @@ public interface SessaoRepository extends CrudRepository<SessaoTrabalho, Long>
 {
 //    value = "from EntityClassTable t where yourDate BETWEEN :startDate AND :endDate"
     @Query("FROM sessaoTrabalho WHERE idMot = :idMot AND created_at  BETWEEN :ini AND :end ")
-    List<SessaoTrabalho> findByCreated_AtAndIdMotBetween(@Param("ini") Date ini, @Param("end") Date end, @Param("idMot")long idMot);
+    List<SessaoTrabalho> findByCreated_AtAndIdMotBetween(@Param("ini") Calendar ini, @Param("end") Calendar end, @Param("idMot")long idMot);
     SessaoTrabalho findById(long id);
     Iterable<SessaoTrabalho> findByIdMotAndStatus(long id, long status);
     List<SessaoTrabalho>  findByIdMot(long idMot);

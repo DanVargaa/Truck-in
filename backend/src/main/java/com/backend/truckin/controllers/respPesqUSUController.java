@@ -32,7 +32,7 @@ public class respPesqUSUController
         System.out.println(classe.Id_Adm +" Este usuário verficiou os dados dos usuários " + classe.NomePesqUsu);
         Iterable<User> respNome = userRepository.findAllByName(classe.NomePesqUsu);
         model.addAttribute("respPesqUSU", respNome);
-        return "respPesqUSU";
+        return "redirect:/allUsers";
     }
 
 

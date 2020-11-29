@@ -1,20 +1,10 @@
-package com.backend.truckin.models;
+package com.backend.truckin.controllers.forms;
 
-
-import org.springframework.beans.factory.annotation.Value;
-
-import javax.persistence.*;
-import javax.validation.constraints.NotBlank;
-import java.time.LocalDateTime;
 import java.util.Calendar;
 
-
-@Entity(name = "sessaoTrabalho")
-public class SessaoTrabalho extends AuditModel{
-
-    public SessaoTrabalho() {}
-
-    public SessaoTrabalho(Long id, String tituloTrab, String nomeCliente, Long idMot, String veiculo, Long idPac, Calendar hi, Calendar hf, Calendar di, Calendar df, Calendar pi, Calendar pf, String ocorrencia, Long status) {
+public class SessaoTrabalhoForm {
+    public SessaoTrabalhoForm(){}
+    public SessaoTrabalhoForm(Long id, String tituloTrab, String nomeCliente, Long idMot, String veiculo, Long idPac, String hi, String hf, String di, String df, String pi, String pf, String ocorrencia, Long status) {
         this.id = id;
         this.tituloTrab = tituloTrab;
         this.nomeCliente = nomeCliente;
@@ -31,8 +21,6 @@ public class SessaoTrabalho extends AuditModel{
         this.status = status;
     }
 
-    @Id
-    @GeneratedValue(strategy= GenerationType.AUTO)
     private Long id;
 
     private String tituloTrab;
@@ -45,22 +33,21 @@ public class SessaoTrabalho extends AuditModel{
 
     private Long idPac;
 
-    private Calendar hi;
+    private String hi;
 
-    private Calendar hf;
+    private String hf;
 
-    private Calendar di;
+    private String di;
 
-    private Calendar df;
+    private String df;
 
-    private Calendar pi;
+    private String pi;
 
-    private Calendar pf;
+    private String pf;
 
     private String ocorrencia;
 
     private Long status;
-
 
     public Long getId() {
         return id;
@@ -110,51 +97,51 @@ public class SessaoTrabalho extends AuditModel{
         this.idPac = idPac;
     }
 
-    public Calendar getHi() {
+    public String getHi() {
         return hi;
     }
 
-    public void setHi(Calendar hi) {
+    public void setHi(String hi) {
         this.hi = hi;
     }
 
-    public Calendar getHf() {
+    public String getHf() {
         return hf;
     }
 
-    public void setHf(Calendar hf) {
+    public void setHf(String hf) {
         this.hf = hf;
     }
 
-    public Calendar getDi() {
+    public String getDi() {
         return di;
     }
 
-    public void setDi(Calendar di) {
+    public void setDi(String di) {
         this.di = di;
     }
 
-    public Calendar getDf() {
+    public String getDf() {
         return df;
     }
 
-    public void setDf(Calendar df) {
+    public void setDf(String df) {
         this.df = df;
     }
 
-    public Calendar getPi() {
+    public String getPi() {
         return pi;
     }
 
-    public void setPi(Calendar pi) {
+    public void setPi(String pi) {
         this.pi = pi;
     }
 
-    public Calendar getPf() {
+    public String getPf() {
         return pf;
     }
 
-    public void setPf(Calendar pf) {
+    public void setPf(String pf) {
         this.pf = pf;
     }
 

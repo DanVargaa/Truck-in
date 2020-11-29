@@ -7,29 +7,30 @@ import javax.persistence.Id;
 
 @Entity(name="resumos")
 public class ResumoSalario extends AuditModel {
-    public ResumoSalario(){}
-
-    public ResumoSalario(Double salarioFinal, Double horasExtras, Double ganhos, String mes) {
-        this.salarioFinal = salarioFinal;
-        this.horasExtras = horasExtras;
-        this.ganhos = ganhos;
-        this.mes = mes;
+    public ResumoSalario() {
     }
 
-    Double salarioFinal;
+    public ResumoSalario(Double horasRegulares, Double horasExtras, Double ganhos) {
+        this.horasRegulares = horasRegulares;
+        this.horasExtras = horasExtras;
+        this.ganhos = ganhos;
+
+    }
+
+    Double horasRegulares;
     Double horasExtras;
     Double ganhos;
     String mes;
     @Id
-    @GeneratedValue(strategy= GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
-    public Double getSalarioFinal() {
-        return salarioFinal;
+    public Double getHorasRegulares() {
+        return horasRegulares;
     }
 
-    public void setSalarioFinal(Double salarioFinal) {
-        this.salarioFinal = salarioFinal;
+    public void setHorasRegulares(Double salarioFinal) {
+        this.horasRegulares = salarioFinal;
     }
 
     public Double getHorasExtras() {
@@ -48,11 +49,4 @@ public class ResumoSalario extends AuditModel {
         this.ganhos = ganhos;
     }
 
-    public String getMes() {
-        return mes;
-    }
-
-    public void setMes(String mes) {
-        this.mes = mes;
-    }
 }

@@ -57,8 +57,6 @@ public class cadTrabalhoController {
         System.out.println(sessaoTrabalho);
         sessaoTrabalho.setStatus((long) 0);
         sessaoRepository.save(sessaoTrabalho);
-        Iterable<SessaoTrabalho> cadSessao = sessaoRepository.findAll();
-        model.addAttribute("cadTrabalho", cadSessao);
 
         return "cadTrabalho";
     }
