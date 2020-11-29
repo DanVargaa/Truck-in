@@ -7,7 +7,7 @@ import com.backend.truckin.utils.DateUtils;
 public class SessaoTrabalhoMapper {
     public SessaoTrabalho map(SessaoTrabalho sessaoTrabalhoUpdate, SessaoTrabalhoForm sessaoTrabalhoForm){
 
-        sessaoTrabalhoUpdate.setNomeCliente(sessaoTrabalhoForm.getNomeCliente());
+
 
         sessaoTrabalhoUpdate.setPi(DateUtils.stringToCalendar(sessaoTrabalhoForm.getPi(),"hh:mm"));
         sessaoTrabalhoUpdate.setDi(DateUtils.stringToCalendar(sessaoTrabalhoForm.getDi(),"hh:mm"));

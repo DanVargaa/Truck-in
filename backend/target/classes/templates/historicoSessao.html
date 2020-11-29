@@ -46,12 +46,6 @@ Header
                     <th>Ident. Pacote</th>
                     <th>Veículo</th>
                     <th>Cliente</th>
-                    <th>Hora inicial</th>
-                    <th>Hora final</th>
-                    <th>Começo de descanso</th>
-                    <th>Fim de descanso</th>
-                    <th>Uso fora de Sessão</th>
-                    <th>Fim de uso fora de Sessão</th>
                 </tr>
                 </thead>
                 <tr th:each="histTrab : ${histTrab}">
@@ -59,12 +53,6 @@ Header
                     <td> <span th:text="${histTrab.idPac}"></span> </td>
                     <td> <span th:text="${histTrab.veiculo}"></span> </td>
                     <td> <span th:text="${histTrab.nomeCliente}"></span> </td>
-                    <td> <span th:text="${histTrab.hi}"></span> </td>
-                    <td> <span th:text="${histTrab.hf}"></span> </td>
-                    <td> <span th:text="${histTrab.di}"></span> </td>
-                    <td> <span th:text="${histTrab.df}"></span> </td>
-                    <td> <span th:text="${histTrab.pi}"></span> </td>
-                    <td> <span th:text="${histTrab.pf}"></span> </td>
                 <tr>
             </table>
         </div>

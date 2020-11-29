@@ -34,21 +34,18 @@ public class sessaoTrabalhoController
     @RequestMapping(value = "salvarHorario", method = RequestMethod.POST)
     public String salvarHorario(@Valid SessaoTrabalhoForm updateTrab, Model model)
     {
-
-        SessaoTrabalhoMapper mapper = new SessaoTrabalhoMapper();
-
         long id = classe.Id_Trabalho;
         long status = 1;
-        updateTrab.setId(id);
+        SessaoTrabalhoMapper mapper = new SessaoTrabalhoMapper();
         SessaoTrabalho sessaoTrabalhoUpdate = sessaoRepository.findById(id);
         SessaoTrabalho sessaoTrabalho = mapper.map(sessaoTrabalhoUpdate, updateTrab );
+        updateTrab.setId(id);
+        sessaoTrabalho.setStatus(status);
+        sessaoTrabalho.setNomeCliente(sessaoTrabalhoUpdate.getNomeCliente());
+
+
         sessaoRepository.save(sessaoTrabalho);
         System.out.println(updateTrab);
-
-
-        //setando total de horas suaString.replaceAll(",", ".");
-        //double aDouble = Double.parseDouble(aString);
-
 
         return "sessaoTrabalho";
     }
