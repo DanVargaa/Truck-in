@@ -67,10 +67,9 @@ Header
                 </tr>
                 </thead>
                 <tr>
-
-                    <td> <span th:text="${resSal?.horasRegulares}"></span> </td>
-                    <td> <span th:text="${resSal?.horasExtras}"></span> </td>
-                    <td> <span th:text="${resSal?.ganhos}"></span> </td>
+                    <td>  <span th:inline="text"> [[${#numbers.formatDecimal(resSal?.horasRegulares, 0, 'COMMA', 2, 'POINT')}]]</span> </td>
+                    <td>  <span th:inline="text"> [[${#numbers.formatDecimal(resSal?.horasExtras, 0, 'COMMA', 2, 'POINT')}]]</span> </td>
+                    <td>  <span th:inline="text"> R$ [[${#numbers.formatDecimal(resSal?.ganhos, 0, 'COMMA', 2, 'POINT')}]]</span> </td>
                 <tr>
             </table>
         </div>

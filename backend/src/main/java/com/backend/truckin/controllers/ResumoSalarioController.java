@@ -4,7 +4,6 @@ import com.backend.truckin.models.IdManager;
 import com.backend.truckin.models.ResumoSalario;
 import com.backend.truckin.models.SessaoTrabalho;
 import com.backend.truckin.models.User;
-import com.backend.truckin.repositories.ResumoRepository;
 import com.backend.truckin.repositories.SessaoRepository;
 import com.backend.truckin.utils.DateUtils;
 import org.springframework.beans.factory.annotation.Autowired;

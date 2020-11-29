@@ -6,7 +6,6 @@ package com.backend.truckin.controllers;
 import com.backend.truckin.controllers.forms.SessaoTrabalhoForm;
 import com.backend.truckin.mappers.SessaoTrabalhoMapper;
 import com.backend.truckin.models.*;
-import com.backend.truckin.repositories.HorarioRepository;
 import com.backend.truckin.repositories.SessaoRepository;
 import com.backend.truckin.repositories.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
