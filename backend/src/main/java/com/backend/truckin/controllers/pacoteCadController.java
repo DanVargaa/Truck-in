@@ -41,12 +41,10 @@ public class pacoteCadController {
         logSessaoDeTrabalho.setIdUser(pacote.getId());
         logRepository.save(logSessaoDeTrabalho);
 
-        System.out.println(pacote);
+        System.out.println("pacote salvo com sucesso");
         pacoteRepository.save(pacote);
 
-        Iterable<Pacote> pacotes = pacoteRepository.findAll();
-        model.addAttribute("pacotes", pacotes);
 
-        return "return:/admActions";
+        return "pacoteCad";
     }
 }

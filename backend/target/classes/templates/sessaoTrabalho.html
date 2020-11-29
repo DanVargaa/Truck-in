@@ -19,62 +19,87 @@
 
 
     <script>
+	   function zeroAntes(i)
+	   {if (i < 10) {i = "0" + i}	;return i;}
+
   function HorarioI1()
   {
   var hora = new Date();
   var h=hora.getHours();
   var m=hora.getMinutes();
-  var s=hora.getSeconds();
+
+  //Preenchendo com 0 espeços vazios no relógio
+   h = zeroAntes(h);
+   m = zeroAntes(m);
+
   //Exibindo no HTML
-  document.getElementById('hi').value = h+":"+m+":"+s;
+  document.getElementById('hi').value = h+":"+m;
   }
   function HorarioF1()
   {
   var hora = new Date();
   var h=hora.getHours();
   var m=hora.getMinutes();
-  var s=hora.getSeconds();
+
+  //Preenchendo com 0 espeços vazios no relógio
+   h = zeroAntes(h);
+   m = zeroAntes(m);
+
   //Exibindo no HTML
-  document.getElementById('hf').value=h+":"+m+":"+s;
+  document.getElementById('hf').value=h+":"+m;
   }
  function HorarioI2()
   {
   var hora = new Date();
   var h=hora.getHours();
   var m=hora.getMinutes();
-  var s=hora.getSeconds();
+
+  //Preenchendo com 0 espeços vazios no relógio
+   h = zeroAntes(h);
+   m = zeroAntes(m);
+
   //Exibindo no HTML
-  document.getElementById('di').value=h+":"+m+":"+s;
+  document.getElementById('di').value=h+":"+m;
   }
    function HorarioF2()
   {
   var hora = new Date();
   var h=hora.getHours();
   var m=hora.getMinutes();
-  var s=hora.getSeconds();
+
+  //Preenchendo com 0 espeços vazios no relógio
+   h = zeroAntes(h);
+   m = zeroAntes(m);
+
   //Exibindo no HTML
-  document.getElementById('df').value=h+":"+m+":"+s;
+  document.getElementById('df').value=h+":"+m;
   }
    function HorarioI3()
   {
   var hora = new Date();
   var h=hora.getHours();
   var m=hora.getMinutes();
-  var s=hora.getSeconds();
+
+  //Preenchendo com 0 espeços vazios no relógio
+   h = zeroAntes(h);
+   m = zeroAntes(m);
+
   //Exibindo no HTML
-  document.getElementById('pi').value=h+":"+m+":"+s;
+  document.getElementById('pi').value=h+":"+m;
   }
    function HorarioF3()
   {
   var hora = new Date();
   var h=hora.getHours();
   var m=hora.getMinutes();
-  var s=hora.getSeconds();
+
+  //Preenchendo com 0 espeços vazios no relógio
+   h = zeroAntes(h);
+   m = zeroAntes(m);
+
   //Exibindo no HTML
-  document.getElementById('pf').value=h+":"+m+":"+s;
-
+  document.getElementById('pf').value=h+":"+m;
   }
-
     </script>
 
 
@@ -92,7 +117,7 @@ Header
         <a class="scrollto"> <img src="bootstrap/img/Logo.png" Width="70px"></a>
         <nav class="main-nav float-right d-none d-lg-block">
             <ul>
-                <li class="active"><a href="admActions">Voltar</a></li>
+                <li class="active"><a href="menuUser">Voltar</a></li>
                 <li><a href="/">Sair</a></li>
             </ul>
         </nav><!-- .main-nav -->
@@ -118,13 +143,13 @@ Header
                             <br>
                             <b style="margin-left: 13px;">Fim: </b>  <input type="text" style="color: red;"   name="hf" id="hf" data-required>
                         </div>
-                       <div class="form-group">
-                           <br>
-                           <h3> Descanso</h3>
-                           <b >Inicio: </b>        <input type="text" style="color: black;" name="di" id="di">
-                           <br>
-                           <b style="margin-left: 13px;">Fim: </b> <input type="text" style="color: red;"  name="df" id="df">
-                       </div>
+                        <div class="form-group">
+                            <br>
+                            <h3> Descanso</h3>
+                            <b >Inicio: </b>        <input type="text" style="color: black;" name="di" id="di">
+                            <br>
+                            <b style="margin-left: 13px;">Fim: </b> <input type="text" style="color: red;"  name="df" id="df">
+                        </div>
                         <div class="form-group">
                             <br>
                             <h3>Fora de Trabalho</h3>
@@ -167,3 +192,4 @@ Header
 
 
 </html>
+

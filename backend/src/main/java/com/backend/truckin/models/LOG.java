@@ -7,7 +7,7 @@ import javax.persistence.Id;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.Size;
 
-@Entity(name="loggs")
+@Entity(name="logs")
 public class LOG extends AuditModel {
     public LOG(){}
     public LOG(Long idAdm, @NotBlank Long idUser, @NotBlank @Size(max = 50) String acaoEfetuada) {

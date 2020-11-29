@@ -5,13 +5,16 @@ import org.springframework.beans.factory.annotation.Value;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotBlank;
+import java.time.LocalDateTime;
+
 
 @Entity(name = "sessaoTrabalho")
 public class SessaoTrabalho extends AuditModel{
 
     public SessaoTrabalho() {}
 
-    public SessaoTrabalho(Long status, String tituloTrab, String nomeCliente, Long idMot, String veiculo, Long idPac, String hi, String hf, String di, String df, String pi, String pf, String ocorrencia) {
+    public SessaoTrabalho(Long id, String tituloTrab, String nomeCliente, Long idMot, String veiculo, Long idPac, String hi, String hf, String di, String df, String pi, String pf, String ocorrencia, Long status) {
+        this.id = id;
         this.tituloTrab = tituloTrab;
         this.nomeCliente = nomeCliente;
         this.idMot = idMot;
@@ -40,22 +43,6 @@ public class SessaoTrabalho extends AuditModel{
     private String veiculo;
 
     private Long idPac;
-
-    private String hi;
-
-    private String hf;
-
-    private String di;
-
-    private String df;
-
-    private String pi;
-
-    private String pf;
-
-    private String ocorrencia;
-
-    private Long status;
 
     public Long getId() {
         return id;
@@ -104,16 +91,6 @@ public class SessaoTrabalho extends AuditModel{
     public void setIdPac(Long idPac) {
         this.idPac = idPac;
     }
-
-    public Long getStatus() {
-        return status;
-    }
-
-    public void setStatus(Long status) {
-        this.status = status;
-    }
-
-    //------------------------------------------------------
 
     public String getHi() {
         return hi;
@@ -170,4 +147,34 @@ public class SessaoTrabalho extends AuditModel{
     public void setOcorrencia(String ocorrencia) {
         this.ocorrencia = ocorrencia;
     }
+
+    public Long getStatus() {
+        return status;
+    }
+
+    public void setStatus(Long status) {
+        this.status = status;
+    }
+
+
+    private String hi;
+
+    private String hf;
+
+    private String di;
+
+    private String df;
+
+    private String pi;
+
+    private String pf;
+
+    private String ocorrencia;
+
+    private Long status;
+
+
+
+
+
 }
