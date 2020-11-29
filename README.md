@@ -23,7 +23,7 @@ Desenvolvemos artes e design das páginas pensando na integração com o banco d
 ![Capture5](https://github.com/DanVargaa/Truck-in/blob/sprint_final/readme-assets/listaVeiculos.png)
 
 ## Resposta de Pesquisa do Veículo
-![Capture6](https://github.com/DanVargaa/Truck-in/blob/sprint_final/readme-assets/telaPesqVeiculo.gif)
+![Capture19](https://github.com/DanVargaa/Truck-in/blob/sprint_final/readme-assets/telaPesqVeiculo.gif)
 
 ## Lista de Pacotes
 ![Capture6](https://github.com/DanVargaa/Truck-in/blob/sprint_final/readme-assets/listaPacotes.png)
@@ -63,13 +63,9 @@ Desenvolvemos artes e design das páginas pensando na integração com o banco d
 ## Resumo do Mês
 ![Capture17](https://github.com/DanVargaa/Truck-in/blob/sprint_final/readme-assets/resumoMes.png)
 
-# Funcionamento das transições entre as páginas
+# Exibição dos Códigos
 
-## Tela Inicial para Login
-![Capture6](https://github.com/DanVargaa/Truck-in/blob/sprint_3/readme-assets/login-index.gif)
+## Funcionamento do Log e do Login
 
-## Tela do Administrador para cadastrar caminhão e motorista
-![Capture7](https://github.com/DanVargaa/Truck-in/blob/sprint_3/readme-assets/index-adm.gif)
-
-
+![Capture20](https://github.com/DanVargaa/Truck-in/blob/sprint_final/readme-assets/Log-Login.png)
 
