@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html> <html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <title>Truck-In</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+    <link href="bootstrap/img/logoIco.png" rel="icon">
+    <link href="bootstrap/img/logoIco.png" rel="apple-touch-icon">
+
+    <link href="bootstrap/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="bootstrap/lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="bootstrap/lib/animate/animate.min.css" rel="stylesheet">
+    <link href="bootstrap/lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+    <link href="bootstrap/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="bootstrap/lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+    <link href="bootstrap/css/style.css" rel="stylesheet">
+
+
+    <script>
+	   function zeroAntes(i)
+	   {if (i < 10) {i = "0" + i}	;return i;}
+
+  function HorarioI1()
+  {
+  var hora = new Date();
+  var h=hora.getHours();
+  var m=hora.getMinutes();
+
+  //Preenchendo com 0 espeços vazios no relógio
+   h = zeroAntes(h);
+   m = zeroAntes(m);
+
+  //Exibindo no HTML
+  document.getElementById('hi').value = h+":"+m;
+  }
+  function HorarioF1()
+  {
+  var hora = new Date();
+  var h=hora.getHours();
+  var m=hora.getMinutes();
+
+  //Preenchendo com 0 espeços vazios no relógio
+   h = zeroAntes(h);
+   m = zeroAntes(m);
+
+  //Exibindo no HTML
+  document.getElementById('hf').value=h+":"+m;
+  }
+ function HorarioI2()
+  {
+  var hora = new Date();
+  var h=hora.getHours();
+  var m=hora.getMinutes();
+
+  //Preenchendo com 0 espeços vazios no relógio
+   h = zeroAntes(h);
+   m = zeroAntes(m);
+
+  //Exibindo no HTML
+  document.getElementById('di').value=h+":"+m;
+  }
+   function HorarioF2()
+  {
+  var hora = new Date();
+  var h=hora.getHours();
+  var m=hora.getMinutes();
+
+  //Preenchendo com 0 espeços vazios no relógio
+   h = zeroAntes(h);
+   m = zeroAntes(m);
+
+  //Exibindo no HTML
+  document.getElementById('df').value=h+":"+m;
+  }
+   function HorarioI3()
+  {
+  var hora = new Date();
+  var h=hora.getHours();
+  var m=hora.getMinutes();
+
+  //Preenchendo com 0 espeços vazios no relógio
+   h = zeroAntes(h);
+   m = zeroAntes(m);
+
+  //Exibindo no HTML
+  document.getElementById('pi').value=h+":"+m;
+  }
+   function HorarioF3()
+  {
+  var hora = new Date();
+  var h=hora.getHours();
+  var m=hora.getMinutes();
+
+  //Preenchendo com 0 espeços vazios no relógio
+   h = zeroAntes(h);
+   m = zeroAntes(m);
+
+  //Exibindo no HTML
+  document.getElementById('pf').value=h+":"+m;
+  }
+    </script>
+
+
+    <script src="bootstrap/js/main.js">
+
+    </script>
+
+
+</head>
+<!--==========================
+Header
+============================-->
+<header id="header" class="fixed-top">
+    <div class="container">
+        <a class="scrollto"> <img src="bootstrap/img/Logo.png" Width="70px"></a>
+        <nav class="main-nav float-right d-none d-lg-block">
+            <ul>
+                <li class="active"><a href="menuUser">Voltar</a></li>
+                <li><a href="/">Sair</a></li>
+            </ul>
+        </nav><!-- .main-nav -->
+    </div>
+</header><!-- #header -->
+
+<!--==========================
+ Intro Section
+============================-->
+<body>
+<section id="intro" class="clearfix">
+
+    <div class="container">
+        <h1>Sessão de Trabalho</h1>
+        <div class="row about-container">
+
+            <div class="col-lg-4">
+                <form id="sessaoTrabalho" action="salvarHorario" method="post">
+                    <div class="intro-info">
+                        <div class="form-group">
+                            <h3>Trabalho</h3>
+                            <b >Inicio: </b><input type="text" style="color: black;"  name="hi" id="hi" data-required>
+                            <br>
+                            <b style="margin-left: 13px;">Fim: </b>  <input type="text" style="color: red;"   name="hf" id="hf" data-required>
+                        </div>
+                        <div class="form-group">
+                            <br>
+                            <h3> Descanso</h3>
+                            <b >Inicio: </b>        <input type="text" style="color: black;" name="di" id="di">
+                            <br>
+                            <b style="margin-left: 13px;">Fim: </b> <input type="text" style="color: red;"  name="df" id="df">
+                        </div>
+                        <div class="form-group">
+                            <br>
+                            <h3>Fora de Trabalho</h3>
+                            <b >Inicio: </b> <input type="text" style="color: black;" name="pi"  id="pi">
+                            <br>
+                            <b style="margin-left: 13px;">Fim: </b>  <input type="text" style="color: red;"  name="pf" id="pf">
+                            <br>
+                            <br>
+                        </div>
+                    </div>
+                    <div class="intro-info">
+                        <input id="btn-submit" class="btn-get-started" type="submit" value="Salvar">
+                    </div>
+                </form>
+            </div>
+            <div class="col-lg-6">
+
+                <div class="intro-info">
+                    <button onclick="HorarioI1()"class="btn-get-started2"  style="margin-top: 70px;" id=btnRel >Iniciar</button>
+                    <button onclick="HorarioF1()"class="btn-get-started2"  style="margin-top: 70px;" id=btnRelF >Parar</button>
+                </div>
+                <div class="intro-info">
+                    <button onclick="HorarioI2()"class="btn-get-started2" style="margin-top: 70px;" id="btnRel2">Iniciar</button>
+                    <button onclick="HorarioF2()"class="btn-get-started2" style="margin-top: 70px;" id="btnRel2F">Parar</button>
+                </div>
+                <div class="intro-info">
+                    <button onclick="HorarioI3()"class="btn-get-started2" style="margin-top: 70px;" id="btnRel3">Iniciar</button>
+                    <button onclick="HorarioF3()" class="btn-get-started2" style="margin-top: 70px;" id="btnRel3F">Parar</button>
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+    </div>
+
+</section><!-- #intro -->
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+
+
+</html>

@@ -1,0 +1,10 @@
+com\backend\truckin\models\Veiculo.class
+com\backend\truckin\exceptions\ResourceNotFoundException.class
+com\backend\truckin\repositories\VeiculoRepository.class
+com\backend\truckin\models\AuditModel.class
+com\backend\truckin\config\JpaAuditingConfig.class
+com\backend\truckin\models\User.class
+com\backend\truckin\controllers\VeiculoController.class
+com\backend\truckin\controllers\UserController.class
+com\backend\truckin\repositories\UserRepository.class
+com\backend\truckin\TruckinApplication.class

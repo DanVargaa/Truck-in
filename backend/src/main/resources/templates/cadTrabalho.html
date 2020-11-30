@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <title>Truck-in</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+    <link href="bootstrap/img/logoIco.png" rel="icon">
+    <link href="bootstrap/img/logoIco.png" rel="apple-touch-icon">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Montserrat:300,400,500,700" rel="stylesheet">
+    <link href="bootstrap/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="bootstrap/lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="bootstrap/lib/animate/animate.min.css" rel="stylesheet">
+    <link href="bootstrap/lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+    <link href="bootstrap/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="bootstrap/lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+    <link href="bootstrap/css/style.css" rel="stylesheet">
+
+</head>
+<!--==========================
+  Header
+  ============================-->
+<header id="header" class="fixed-top">
+    <div class="container">
+        <a class="scrollto"> <img src="bootstrap/img/Logo.png" Width="70px"></a>
+        <nav class="main-nav float-right d-none d-lg-block">
+            <ul>
+                <li class="active"><a href="admActions">Voltar</a></li>
+                <li><a href="/">Sair</a></li>
+            </ul>
+        </nav><!-- .main-nav -->
+    </div>
+</header><!-- #header -->
+<!--==========================
+   Intro Section
+ ============================-->
+<section id="intro" class="clearfix">
+    <div class="container">
+        <h1>Cadastrar Trabalho</h1>
+        <div class="full-box">
+            <form action="cadSessao" method="post"> <!-- FAZER O EVENTO SALVAR -->
+                <div class="half-box">
+                    <b for="motoristas">Selecine o Motorista: </b>
+                    <select  name="idMot" id="idMot" class="form-group">
+                        <option >Selecione um Motorista</option>
+                        <option th:each="user : ${mot}" th:value="${user.id}" th:text="${user.name}" selected="selected"> </option>
+                    </select>
+                    <br>
+                    <b>Selecione o Veiculo: </b>
+                    <select  name="veiculo" id="veiculo" class="form-group">
+                        <option >Selecione um Veiculo</option>
+                        <option th:each="veiculo : ${vei}" th:value="${veiculo.placa}" th:text="${veiculo.placa}" selected="selected"> </option>
+                    </select>
+                    <br>
+                    <b>Selecione o Pacote</b>
+                    <select  name="idPac" id="idPac" class="form-group">
+                        <option >Selecione um Pacote</option>
+                        <option th:each="pacote : ${pac}" th:value="${pacote.id}" th:text="${pacote.titulo}" selected="selected"> </option>
+                    </select>
+                    <br>
+                    <b>Digite o Titulo: </b>
+                    <br>
+                    <input type="text" class="form-group" id="tituloTrab" name="tituloTrab"/>
+                    <br>
+                    <b>Digite o Nome do Cliente: </b>
+                    <br>
+                    <input type="text" class="form-group" id="nomeCliente" name="nomeCliente"/>
+                </div>
+                <div class="intro-info">
+                    <input id="btn-submit" class="btn-get-started" type="submit" value="Cadastrar">
+                </div>
+            </form>
+        </div>
+    </div>
+</section><!-- #intro -->
