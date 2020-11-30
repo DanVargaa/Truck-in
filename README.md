@@ -23,6 +23,7 @@ Kevin Gabriel Alves de Melo (Dev Team)
 [Github](https://github.com/kevingabrielmelo))
 
 Luiz Miguel Macedo Andre (Dev Team)
+([Linkedin](https://www.linkedin.com/in/luiz-miguel-475347193/))
 
 Salvador Lopes Junior (Dev Team)
 
