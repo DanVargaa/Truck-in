@@ -92,17 +92,23 @@ O menu é o lugar onde o motorista encontra uma lista com todas as ações que e
 
 ![Menu do motorista](https://github.com/DanVargaa/Truck-in/blob/sprint_final/readme-assets/menuUsu%C3%A1rio.png)
 
-#### Histórico de Jornadas de Trabalho
 
-TODO
+#### Lista de Trabalho
 
-![Histórico de jornadas de trabalho](https://github.com/DanVargaa/Truck-in/blob/sprint_final/readme-assets/historicoTrabalho.png)
+Aqui o motorista poderá ver quais jornadas estão pendentes para que possam serem realizadas, ele as escolherá pelo ID delas.
+
+![Sessão de trabalho](https://github.com/DanVargaa/Truck-in/blob/sprint_final/readme-assets/listaTrabalho.png)
 
 #### Sessão de Trabalho
 
-TODO
+Nesta tela o motorista já escolheu sua jornada e preencherá com as informações das horas de trabalho, descanso e fora de serviço, assim finalizando a jornada.
 
-![Sessão de trabalho](https://github.com/DanVargaa/Truck-in/blob/sprint_final/readme-assets/listaTrabalho.png)
+#### Histórico de Jornadas de Trabalho
+
+Nesta tela o motorista poderá vizualizar seu histórico de jornadas concluídas.
+
+![Histórico de jornadas de trabalho](https://github.com/DanVargaa/Truck-in/blob/sprint_final/readme-assets/historicoTrabalho.png)
+
 
 #### Visualização de Perfil
 
@@ -112,13 +118,21 @@ Nesta tela o motorista pode visualizar seus próprios dados, como nome, endereç
 
 #### Resumo do Mês
 
-TODO
+O motoristá poderá ver nesta tela o resultado de suas jornadas no mês, contando com as horas trabalhadas, horas extras e ganho total.
 
 ![Resumo do mês](https://github.com/DanVargaa/Truck-in/blob/sprint_final/readme-assets/resumoMes.png)
 
-# Exibição dos Códigos
+# Exemplos de uso
 
-## Funcionamento do Log e do Login
+#### Exemplo de Administrador
 
-![Capture20](https://github.com/DanVargaa/Truck-in/blob/sprint_final/readme-assets/Log-Login.png)
+Um adminstrador que pesquisou informações no banco e analisou os dados
+
+![AdmFunctions](https://github.com/DanVargaa/Truck-in/blob/sprint_final/readme-assets/AdmFunctions.gif)
+
+#### Exemplo de Motorista
+
+Um motorista que completou uma jornada, viu seu histórico de jornadas concluídas, perfil e por fim o resultado do mês de novembro.
+
+![UserFunction](https://github.com/DanVargaa/Truck-in/blob/sprint_final/readme-assets/UserFunction.gif)
 
