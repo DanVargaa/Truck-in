@@ -45,7 +45,7 @@ Salvador Lopes Junior (Dev Team)
 02/11/2020 a 08/11/2020	
 
 
-<a href='https://github.com/DanVargaa/Truck-in/tree/sprint_3'> Branch 3 </a>-
+<a href='https://github.com/DanVargaa/Truck-in/tree/branch_spring_padrao'> Branch 3 </a>-
 23/11/2020 a 29/11/2020
 
 ## Tecnologias Usadas
