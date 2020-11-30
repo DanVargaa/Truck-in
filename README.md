@@ -10,6 +10,8 @@ Kauan do Espirito Santo Souza (Scrum Master)
 Daniel Vargas Ribeiro (Product Owner)
 
 Cauê Bittencourt Carnietto (Dev Team)
+([Linkedin](https://www.linkedin.com/in/cau%C3%AA-bittencourt-carnietto-917951103/),
+[Github](https://github.com/cacauisadog))
 
 Edryan Matheus dos Santos Maciel (Dev Team)
 
