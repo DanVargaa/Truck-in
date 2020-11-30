@@ -1,39 +1,55 @@
 package com.backend.truckin.controllers;
 
-import com.backend.truckin.models.SessaoTrabalho;
+
+
+
+import com.backend.truckin.controllers.forms.SessaoTrabalhoForm;
+import com.backend.truckin.mappers.SessaoTrabalhoMapper;
+import com.backend.truckin.models.*;
 import com.backend.truckin.repositories.SessaoRepository;
+import com.backend.truckin.repositories.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 import javax.validation.Valid;
 
 @Controller
-public class SessaoTrabalhoController {
+public class sessaoTrabalhoController
+{
     @Autowired
     private SessaoRepository sessaoRepository;
 
-    @RequestMapping("sessoes")
-    public String sessoes(Model model) {
-        System.out.println("entrou nesse método sessão de trabalho");
-        Iterable<SessaoTrabalho> sessoes = sessaoRepository.findAll();
-        model.addAttribute("sessoes", sessoes);
+    IdManager classe = new IdManager();
 
-        return "sessoes";
+    @RequestMapping("sessaoTrabalho")
+    public String sessaoTrabalho()
+    {
+        System.out.println("Chegou" + classe.Id_Trabalho);
+        return ("sessaoTrabalho");
     }
-
-    @RequestMapping(value = "salvarSessao", method = RequestMethod.POST)
-    public String salvar(@Valid SessaoTrabalho sessao, Model model) {
+    @RequestMapping(value = "salvarHorario", method = RequestMethod.POST)
+    public String salvarHorario(@Valid SessaoTrabalhoForm updateTrab, Model model)
+    {
+        long id = classe.Id_Trabalho;
+        long status = 1;
+        SessaoTrabalhoMapper mapper = new SessaoTrabalhoMapper();
+        SessaoTrabalho sessaoTrabalhoUpdate = sessaoRepository.findById(id);
+        SessaoTrabalho sessaoTrabalho = mapper.map(sessaoTrabalhoUpdate, updateTrab );
+        updateTrab.setId(id);
+        sessaoTrabalho.setStatus(status);
+        sessaoTrabalho.setNomeCliente(sessaoTrabalhoUpdate.getNomeCliente());
 
         System.out.println(sessao);
         sessaoRepository.save(sessao);
 
-        Iterable<SessaoTrabalho> sessoes = sessaoRepository.findAll();
-        model.addAttribute("sessoes", sessoes);
+        sessaoRepository.save(sessaoTrabalho);
+        System.out.println(updateTrab);
 
-        return "adms";
+        return "sessaoTrabalho";
     }
 
 }
