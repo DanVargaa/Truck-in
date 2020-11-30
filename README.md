@@ -19,6 +19,8 @@ Edryan Matheus dos Santos Maciel (Dev Team)
 Kauan do Espirito Santo Souza (Dev Team)
 
 Kevin Gabriel Alves de Melo (Dev Team)
+([Linkedin](https://www.linkedin.com/in/kevin-melo-1004/),
+[Github](https://github.com/kevingabrielmelo))
 
 Luiz Miguel Macedo Andre (Dev Team)
 
