@@ -18,7 +18,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import javax.validation.Valid;
 
 @Controller
-public class sessaoTrabalhoController
+public class SessaoTrabalhoController
 {
     @Autowired
     private SessaoRepository sessaoRepository;
