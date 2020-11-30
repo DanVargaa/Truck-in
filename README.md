@@ -54,5 +54,7 @@ Intellij Idea
 
 Java JDK 14
 
-Postgres
+PostgreSQL
+
+Springboot
 
