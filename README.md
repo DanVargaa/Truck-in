@@ -26,6 +26,8 @@ Luiz Miguel Macedo Andre (Dev Team)
 ([Linkedin](https://www.linkedin.com/in/luiz-miguel-475347193/))
 
 Salvador Lopes Junior (Dev Team)
+([Linkedin](https://www.linkedin.com/in/salvador-lopes-jr-6626b01a2/),
+[Github](https://github.com/salvador-lopes))
 
 
 ## Cards das Sprints
