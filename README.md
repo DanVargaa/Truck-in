@@ -8,7 +8,8 @@ O projeto Truck-in consiste em uma API desenvolvida usando Java spring-boot e um
 Kauan do Espirito Santo Souza (Scrum Master)
 
 Daniel Vargas Ribeiro (Product Owner)
-([Linkedin](https://www.linkedin.com/in/daniel-vargas-8b806a184/))
+([Linkedin](https://www.linkedin.com/in/daniel-vargas-8b806a184/),
+[Github](https://github.com/DanVargaa))
 
 Cauê Bittencourt Carnietto (Dev Team)
 ([Linkedin](https://www.linkedin.com/in/cau%C3%AA-bittencourt-carnietto-917951103/),
